@@ -1,0 +1,18 @@
+{
+  "name": "finalshell-pages-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "eleventy --serve --port=8090",
+    "build": "eleventy",
+    "generate:articles": "node scripts/generate-articles.js",
+    "push:bing:updated": "node scripts/push-bing.js --mode updated",
+    "push:bing:all": "node scripts/push-bing.js --mode all"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "latest",
+    "@google/genai": "latest",
+    "luxon": "latest"
+  }
+}

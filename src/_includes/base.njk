@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title or site.title }}</title>
+    <meta name="description" content="{{ description or site.description }}">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="/" aria-label="FinalShell">
+          <img src="/assets/logo.svg" alt="FinalShell 标识" width="42" height="42">
+          <span class="brand-text">FinalShell</span>
+        </a>
+        <nav class="nav" aria-label="主导航">
+          <a href="/">首页</a>
+          <a href="/dows.html">下载中心</a>
+          <a href="/blog/">博客</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      {{ content | safe }}
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <section>
+          <h2>FinalShell ssh</h2>
+          <p>FinalShell ssh 连接、会话管理、文件传输与服务器日常维护内容，帮助开发与运维人员更快上手。</p>
+        </section>
+        <nav aria-label="页脚导航">
+          <a href="/">FinalShell SSH</a>
+          <a href="/dows.html">客户端下载</a>
+          <a href="/blog/">技术文章</a>
+          <a href="/categories/">目录</a>
+          <a href="/tags/">Tags</a>
+          <a href="/sitemap.xml">站点地图</a>
+        </nav>
+      </div>
+    </footer>
+    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    <script>LA.init({id:"3K7l95Zodr0uFrIN",ck:"3K7l95Zodr0uFrIN"})</script>
+  </body>
+</html>

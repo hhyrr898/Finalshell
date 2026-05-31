@@ -1,0 +1,23 @@
+---
+layout: base.njk
+title: FinalShell Tags 内容聚合
+description: FinalShell SSH 连接、安装、传输、运维与开发调试 Tags 聚合入口。
+permalink: /tags/
+---
+<section class="block">
+  <div class="container">
+    <header class="block-head">
+      <h1>FinalShell Tags 内容聚合</h1>
+      <p>按标签浏览 FinalShell 相关文章。</p>
+    </header>
+    <div class="list-grid">
+      {% for tag in collections.publicTags %}
+        <article class="list-card">
+          <h2>{{ tag }}</h2>
+          <p>查看 {{ tag }} 相关 FinalShell 内容。</p>
+          <a class="link-btn" href="/tags/{{ tag | tagSlug }}/">进入聚合页</a>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

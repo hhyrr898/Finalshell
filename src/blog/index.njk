@@ -1,0 +1,33 @@
+---
+layout: base.njk
+title: FinalShell 技术文章与教程列表
+description: FinalShell SSH 连接、会话管理、文件传输、服务器运维与安装配置文章列表。
+permalink: /blog/
+---
+<section class="block">
+  <div class="container">
+    <header class="block-head">
+      <h1>FinalShell 技术文章与教程列表</h1>
+      <p>按时间整理 FinalShell 安装、连接、传输与运维相关内容。</p>
+    </header>
+    <div class="list-grid">
+      {% for post in collections.posts %}
+        <article class="list-card">
+          {% if post.data.heroImage %}
+            <a href="{{ post.url }}">
+              <img src="{{ post.data.heroImage }}" alt="{{ post.data.heroAlt or post.data.title }}" loading="lazy">
+            </a>
+          {% endif %}
+          <time datetime="{{ post.date | readableDate }}">{{ post.date | readableDate }}</time>
+          <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+          <p>{{ post.data.description }}</p>
+          <div class="chip-row">
+            {% for tag in post.data.tags | publicTags %}
+              <a href="/tags/{{ tag | tagSlug }}/">{{ tag }}</a>
+            {% endfor %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
