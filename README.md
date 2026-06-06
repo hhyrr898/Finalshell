@@ -27,7 +27,7 @@ npm run generate:articles -- --count=3
 ## 必应 URL 提交
 
 ```bash
-set SITE_URL=https://your-domain.com
+set SITE_URL=https://finalshell-ssh.com
 set BING_API_KEY=your_bing_key
 npm run push:bing:all
 npm run push:bing:updated
