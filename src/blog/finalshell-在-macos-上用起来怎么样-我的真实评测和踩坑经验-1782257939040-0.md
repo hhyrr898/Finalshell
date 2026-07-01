@@ -5,13 +5,13 @@ description: 本文将为你真实评测 FinalShell macOS 客户端的使用体�
 date: 2026-06-23
 category: 服务器运维
 tags: ["macOS客户端","服务器运维","Docker"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%20%E5%9C%A8%20macOS%20%E4%B8%8A%E7%94%A8%E8%B5%B7%E6%9D%A5%E6%80%8E%E4%B9%88%E6%A0%B7%EF%BC%9F%E6%88%91%E7%9A%84%E7%9C%9F%E5%AE%9E%E8%AF%84%E6%B5%8B%E5%92%8C%E8%B8%A9%E5%9D%91%E7%BB%8F%E9%AA%8C"
+heroImage: "/static/images/photo-1517694712202-14dd9538aa97.jpg"
 heroAlt: "FinalShell 在 macOS 上用起来怎么样？我的真实评测和踩坑经验 配图"
 ---
 
 作为一名长期在 macOS 上摸爬滚打的运维党，我总在寻找一个趁手的 SSH 工具。最近一段时间，我把主力客户端换成了 FinalShell。这次评测，我用的是 **FinalShell 4.9.9** 版本，操作系统是 **macOS Sonoma 14.5 (23F79)**。在日常的服务器维护、Docker 环境管理中，它究竟表现如何呢？下面就来聊聊我的真实感受。
 
-![FinalShell macOS 界面](https://tse-mm.bing.com/th?q=FinalShell%20macOS%20interface)
+![FinalShell macOS 界面](/static/images/photo-1526374965328-7f61d4dc18c5.jpg)
 
 ## 我的 FinalShell macOS 初体验
 

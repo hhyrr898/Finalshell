@@ -5,7 +5,7 @@ description: 在 macOS 上使用 FinalShell 传输文件遇到障碍？本文手
 date: 2026-06-24
 category: SSH工具使用
 tags: ["端口转发","macOS客户端","SFTP传输"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%20macOS%20%E7%89%88%E6%80%8E%E4%B9%88%E9%AB%98%E6%95%88%E4%BC%A0%E6%96%87%E4%BB%B6%EF%BC%9F%E4%BF%9D%E5%A7%86%E7%BA%A7%20SFTP%20%E6%95%99%E7%A8%8B%E6%9D%A5%E4%BA%86%EF%BC%81"
+heroImage: "/static/images/photo-1510511459019-5dda7724fd87.jpg"
 heroAlt: "FinalShell macOS 版怎么高效传文件？保姆级 SFTP 教程来了！ 配图"
 ---
 
@@ -15,7 +15,7 @@ heroAlt: "FinalShell macOS 版怎么高效传文件？保姆级 SFTP 教程来�
 
 FinalShell 在 Linux 服务器管理方面确实是一款非常好用的工具，特别是它集成了 SSH 终端、SFTP 文件传输和一些系统监控功能。对于我们这些需要频繁与服务器打交道的人来说，效率提升是实实在在的。我个人使用的 FinalShell macOS 客户端版本是 `4.5.0`，虽然界面布局和 Windows 版有些许不同，但核心功能都还在。咱们今天的重点就是，怎么用它来上传下载文件。
 
-![FinalShell macOS SFTP 界面](https://tse-mm.bing.com/th?q=FinalShell%20macOS%20SFTP%20%E7%95%8C%E9%9D%A2)
+![FinalShell macOS SFTP 界面](/static/images/photo-1454165804606-c3d57bc86b40.jpg)
 
 ## SFTP 文件传输实战，三步搞定！
 
