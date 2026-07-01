@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell 团队服务器交接与连接清单
-description: 团队变更时 FinalShell 连接清单整理、权限回收与文档交接流程。
+title: 运维交接 SOP：会话、密钥与文档同步
+description: 离职或轮岗时 FinalShell 会话、密钥与 runbook 的交接步骤。
 date: 2026-05-13
 category: 服务器运维
 tags: ["团队交接","连接清单","权限管理"]
 heroImage: "/static/images/photo-1541746972996-4e0b0f43e02a.jpg"
-heroAlt: "FinalShell 团队服务器交接与连接清单 配图"
+heroAlt: "运维交接 SOP：会话、密钥与文档同步 配图"
 ---
 
 ## 交接清单

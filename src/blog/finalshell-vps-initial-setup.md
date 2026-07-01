@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell VPS 新机器初始化与安全加固
-description: 新购 VPS 后通过 FinalShell 完成用户创建、防火墙与 SSH 安全加固。
+title: 新购 VPS 上线：SSH 加固与首批会话建立
+description: 新机 sshd 加固、防火墙放行与 FinalShell 首批生产会话创建清单。
 date: 2026-05-19
 category: 服务器运维
 tags: ["VPS初始化","安全加固","新机器配置"]
 heroImage: "/static/images/photo-1516321318423-f06f85e504b3.jpg"
-heroAlt: "FinalShell VPS 新机器初始化与安全加固 配图"
+heroAlt: "新购 VPS 上线：SSH 加固与首批会话建立 配图"
 ---
 
 ## 首次登录

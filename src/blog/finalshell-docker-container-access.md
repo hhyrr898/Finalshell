@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell 连接 Docker 宿主机与容器运维
-description: 通过 FinalShell SSH 管理 Docker 宿主机、进入容器与查看资源占用。
+title: Docker 宿主机运维：容器日志与 exec 排查
+description: 连接 Docker 宿主机、查看容器日志与 docker exec 进入容器排错。
 date: 2026-05-21
 category: 服务器运维
 tags: ["Docker","容器运维","宿主机管理"]
 heroImage: "/static/images/photo-1558494949-ef010cbdcc31.jpg"
-heroAlt: "FinalShell 连接 Docker 宿主机与容器运维 配图"
+heroAlt: "Docker 宿主机运维：容器日志与 exec 排查 配图"
 ---
 
 ## 宿主机连接

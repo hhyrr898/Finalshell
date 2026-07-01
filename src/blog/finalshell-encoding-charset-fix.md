@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell 终端中文乱码与编码设置修复
-description: FinalShell 终端 UTF-8 编码配置、locale 设置与中文文件名显示问题。
+title: 跨系统编码对齐：CentOS/Ubuntu 中文终端
+description: 不同发行版 locale 与 FinalShell 终端编码的协同设置方法。
 date: 2026-05-18
 category: SSH 连接
 tags: ["编码设置","中文乱码","UTF-8"]
 heroImage: "/static/images/photo-1520607162513-77705c0f0d4a.jpg"
-heroAlt: "FinalShell 终端中文乱码与编码设置修复 配图"
+heroAlt: "跨系统编码对齐：CentOS/Ubuntu 中文终端 配图"
 ---
 
 ## 客户端设置

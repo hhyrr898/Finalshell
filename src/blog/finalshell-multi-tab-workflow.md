@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell 多标签终端工作流与并行任务
-description: FinalShell 多标签终端并行操作、日志查看与部署流程组织方法。
+title: 多标签并行运维：日志、部署与数据库同屏操作
+description: 同一窗口多标签并行 tail、git pull 与数据库客户端操作的工作流。
 date: 2026-05-26
 category: 会话管理
 tags: ["多标签","工作流","并行任务"]
 heroImage: "/static/images/photo-1544383835-bda2bc66a55d.jpg"
-heroAlt: "FinalShell 多标签终端工作流与并行任务 配图"
+heroAlt: "多标签并行运维：日志、部署与数据库同屏操作 配图"
 ---
 
 ## 标签组织

@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell 远程 MySQL 维护与慢查询排查
-description: 通过 FinalShell 连接数据库服务器、备份数据与慢查询日志分析。
+title: 远程 MySQL：慢查询导出与变更操作规范
+description: 慢查询日志、mysqldump 与线上 DDL 变更的终端操作规范。
 date: 2026-05-11
 category: 服务器运维
 tags: ["MySQL","数据库维护","慢查询"]
 heroImage: "/static/images/photo-1535378917042-10a22c95931a.jpg"
-heroAlt: "FinalShell 远程 MySQL 维护与慢查询排查 配图"
+heroAlt: "远程 MySQL：慢查询导出与变更操作规范 配图"
 ---
 
 ## 连接方式

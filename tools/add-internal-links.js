@@ -8,14 +8,14 @@ const POSTS_DIR = path.join(__dirname, "..", "src", "blog");
 const DRY_RUN = process.argv.includes("--dry-run");
 
 const PILLARS = [
-  { path: "/blog/finalshell-windows-install-guide/", label: "Windows 安装", keywords: ["windows", "win10", "win11", "安装", "客户端"] },
-  { path: "/blog/finalshell-macos-install-steps/", label: "macOS 安装", keywords: ["macos", "mac", "苹果", "安装"] },
-  { path: "/blog/finalshell-linux-ssh-setup/", label: "Linux SSH 配置", keywords: ["linux", "ubuntu", "centos", "ssh", "连接"] },
-  { path: "/blog/finalshell-ssh-key-configuration/", label: "SSH 密钥", keywords: ["密钥", "key", "私钥", "公钥", "登录"] },
-  { path: "/blog/finalshell-sftp-file-transfer/", label: "SFTP 传输", keywords: ["sftp", "传输", "上传", "下载", "文件"] },
-  { path: "/blog/finalshell-port-forwarding-guide/", label: "端口转发", keywords: ["端口", "转发", "隧道", "tunnel", "代理"] },
-  { path: "/blog/finalshell-session-group-management/", label: "会话分组", keywords: ["会话", "分组", "标签", "多开"] },
-  { path: "/blog/finalshell-server-monitoring-basics/", label: "服务器监控", keywords: ["监控", "cpu", "内存", "磁盘", "top"] },
+  { path: "/blog/finalshell-windows-install-guide/", label: "Windows 生产部署", keywords: ["windows", "win10", "win11", "安装", "客户端", "验收"] },
+  { path: "/blog/finalshell-macos-install-steps/", label: "macOS 工作站配置", keywords: ["macos", "mac", "苹果", "安装", "授权"] },
+  { path: "/blog/finalshell-linux-ssh-setup/", label: "Linux 批量接入", keywords: ["linux", "ubuntu", "centos", "ssh", "连接", "模板"] },
+  { path: "/blog/finalshell-ssh-key-configuration/", label: "SSH 密钥轮换", keywords: ["密钥", "key", "私钥", "公钥", "登录", "轮换"] },
+  { path: "/blog/finalshell-sftp-file-transfer/", label: "SFTP 发布工作流", keywords: ["sftp", "传输", "上传", "下载", "文件", "发布"] },
+  { path: "/blog/finalshell-port-forwarding-guide/", label: "隧道端口映射", keywords: ["端口", "转发", "隧道", "tunnel", "代理", "调试"] },
+  { path: "/blog/finalshell-session-group-management/", label: "多环境会话树", keywords: ["会话", "分组", "标签", "多开", "环境"] },
+  { path: "/blog/finalshell-server-monitoring-basics/", label: "负载异常判读", keywords: ["监控", "cpu", "内存", "磁盘", "top", "负载"] },
 ];
 
 const DEFAULT_PILLARS = [PILLARS[0], PILLARS[3], PILLARS[4]];

@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell 界面主题与终端配色自定义
-description: FinalShell 主题切换、字体大小、配色方案与长时间使用的视觉舒适度。
+title: 值班可读性：终端主题与配色长时间优化
+description: 深色或浅色主题与高对比配色，降低长时间值班的眼部疲劳。
 date: 2026-05-16
 category: 会话管理
 tags: ["主题设置","终端配色","界面自定义"]
 heroImage: "/static/images/photo-1451187580459-43490279c0fa.jpg"
-heroAlt: "FinalShell 界面主题与终端配色自定义 配图"
+heroAlt: "值班可读性：终端主题与配色长时间优化 配图"
 ---
 
 ## 主题选择

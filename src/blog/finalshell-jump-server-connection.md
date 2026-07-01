@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell 跳板机连接与多级 SSH 访问
-description: FinalShell 通过跳板机访问内网服务器、代理链配置与连接稳定性。
+title: 堡垒机链路：二级跳转与内网主机访问
+description: 跳板机与 ProxyJump 思路在 FinalShell 中的多级 SSH 会话链配置。
 date: 2026-05-20
 category: SSH 连接
 tags: ["跳板机","内网访问","代理链"]
 heroImage: "/static/images/photo-1550751827-4bd374c3f58b.jpg"
-heroAlt: "FinalShell 跳板机连接与多级 SSH 访问 配图"
+heroAlt: "堡垒机链路：二级跳转与内网主机访问 配图"
 ---
 
 ## 跳板机场景

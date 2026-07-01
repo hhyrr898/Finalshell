@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell 端口转发配置与本地调试远程服务
-description: FinalShell 本地端口转发、远程端口映射与开发调试场景说明。
+title: 本地调试远程服务：隧道与端口映射实战
+description: 本地转发映射内网数据库或 API，配合 FinalShell 隧道做开发联调。
 date: 2026-05-23
 category: 开发调试
 tags: ["端口转发","本地调试","隧道配置"]
 heroImage: "/static/images/photo-1454165804606-c3d57bc86b40.jpg"
-heroAlt: "FinalShell 端口转发配置与本地调试远程服务 配图"
+heroAlt: "本地调试远程服务：隧道与端口映射实战 配图"
 ---
 
 ## 转发类型

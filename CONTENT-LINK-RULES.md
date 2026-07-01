@@ -12,14 +12,14 @@
 
 | 主题 | 路径 |
 |------|------|
-| Windows 安装 | `/blog/finalshell-windows-install-guide/` |
-| macOS 安装 | `/blog/finalshell-macos-install-steps/` |
-| Linux SSH | `/blog/finalshell-linux-ssh-setup/` |
-| SSH 密钥 | `/blog/finalshell-ssh-key-configuration/` |
-| SFTP 传输 | `/blog/finalshell-sftp-file-transfer/` |
-| 端口转发 | `/blog/finalshell-port-forwarding-guide/` |
-| 会话分组 | `/blog/finalshell-session-group-management/` |
-| 服务器监控 | `/blog/finalshell-server-monitoring-basics/` |
+| Windows 生产部署 | `/blog/finalshell-windows-install-guide/` |
+| macOS 工作站 | `/blog/finalshell-macos-install-steps/` |
+| Linux 批量接入 | `/blog/finalshell-linux-ssh-setup/` |
+| SSH 密钥轮换 | `/blog/finalshell-ssh-key-configuration/` |
+| SFTP 发布工作流 | `/blog/finalshell-sftp-file-transfer/` |
+| 隧道本地调试 | `/blog/finalshell-port-forwarding-guide/` |
+| 多环境会话树 | `/blog/finalshell-session-group-management/` |
+| 负载异常判读 | `/blog/finalshell-server-monitoring-basics/` |
 | 下载中心 | `/dows.html` |
 | 首页 | `/` |
 

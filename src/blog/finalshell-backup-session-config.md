@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell 会话配置备份与团队共享
-description: FinalShell 连接列表导出、备份恢复与团队间安全共享方式。
+title: 团队会话资产导出与交接前连接清单
+description: 导出会话配置、整理密钥清单，用于团队交接与灾备恢复。
 date: 2026-05-15
 category: 会话管理
 tags: ["配置备份","团队共享","连接导出"]
 heroImage: "/static/images/photo-1531297484001-80022131f5a1.jpg"
-heroAlt: "FinalShell 会话配置备份与团队共享 配图"
+heroAlt: "团队会话资产导出与交接前连接清单 配图"
 ---
 
 ## 备份时机

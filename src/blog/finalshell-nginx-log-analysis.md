@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell 配合 Nginx 日志分析与故障排查
-description: 使用 FinalShell 终端分析 Nginx access 与 error 日志的常见命令。
+title: Nginx 5xx 与慢请求：日志 awk/grep 快速定位
+description: access/error 日志字段解读与 awk 统计慢 URL、5xx 比例。
 date: 2026-05-12
 category: 服务器运维
 tags: ["Nginx","日志分析","故障排查"]
 heroImage: "/static/images/photo-1552664730-d307ca884978.jpg"
-heroAlt: "FinalShell 配合 Nginx 日志分析与故障排查 配图"
+heroAlt: "Nginx 5xx 与慢请求：日志 awk/grep 快速定位 配图"
 ---
 
 ## 日志位置

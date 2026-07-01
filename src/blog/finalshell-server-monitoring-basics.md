@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell 服务器监控面板基础指标解读
-description: FinalShell 内置监控中 CPU、内存、磁盘与网络指标的含义与日常参考。
+title: 线上负载异常判读：FinalShell 实时监控面板
+description: 结合 CPU、内存与网络曲线判断服务器负载突增与常见误报。
 date: 2026-05-25
 category: 服务器运维
 tags: ["服务器监控","资源指标","运维基础"]
 heroImage: "/static/images/photo-1563986768609-322da13575f3.jpg"
-heroAlt: "FinalShell 服务器监控面板基础指标解读 配图"
+heroAlt: "线上负载异常判读：FinalShell 实时监控面板 配图"
 ---
 
 ## 监控入口

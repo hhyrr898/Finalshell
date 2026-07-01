@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell Git 拉取部署与发布流程实践
-description: 使用 FinalShell 在服务器执行 git pull、构建与发布回滚流程。
+title: Git 拉码发布：FinalShell 终端部署流水线
+description: 测试与生产环境 git pull、依赖安装与服务 reload 的标准步骤。
 date: 2026-05-10
 category: 开发调试
 tags: ["Git部署","发布流程","CI/CD"]
 heroImage: "/static/images/photo-1562813733-b31f71025d54.jpg"
-heroAlt: "FinalShell Git 拉取部署与发布流程实践 配图"
+heroAlt: "Git 拉码发布：FinalShell 终端部署流水线 配图"
 ---
 
 ## 部署步骤

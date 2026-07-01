@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell 移动端 SSH 管理与应急运维
-description: FinalShell 移动端查看服务器状态、应急重启与轻量运维场景。
+title: 移动端应急运维：外网 SSH 与现场重启
+description: 手机端紧急登录、重启服务与临时查看日志的应急场景。
 date: 2026-05-14
 category: 移动端
 tags: ["移动端","应急运维","远程管理"]
 heroImage: "/static/images/photo-1454165804606-c3d57bc86b40.jpg"
-heroAlt: "FinalShell 移动端 SSH 管理与应急运维 配图"
+heroAlt: "移动端应急运维：外网 SSH 与现场重启 配图"
 ---
 
 ## 移动场景

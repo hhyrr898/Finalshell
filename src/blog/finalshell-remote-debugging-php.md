@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell 远程 PHP 项目调试与日志定位
-description: 使用 FinalShell 连接 PHP 服务器、查看错误日志与常见问题排查流程。
+title: PHP 线上排错：远程 tail 与 FPM 状态查看
+description: 远程 tail PHP/Nginx 错误日志、查看 php-fpm 进程状态的常用命令。
 date: 2026-05-22
 category: 开发调试
 tags: ["PHP调试","日志定位","远程开发"]
 heroImage: "/static/images/photo-1639762681485-074b7f938ba0.jpg"
-heroAlt: "FinalShell 远程 PHP 项目调试与日志定位 配图"
+heroAlt: "PHP 线上排错：远程 tail 与 FPM 状态查看 配图"
 ---
 
 ## 日志路径

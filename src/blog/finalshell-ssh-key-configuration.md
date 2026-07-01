@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell SSH 密钥登录配置与安全实践
-description: FinalShell 配置 SSH 私钥、公钥部署、权限设置与密钥轮换建议。
+title: 生产环境 SSH 密钥轮换与 FinalShell 私钥托管
+description: 密钥生成、服务器 authorized_keys 部署及 FinalShell 私钥引用与轮换建议。
 date: 2026-05-24
 category: SSH 连接
 tags: ["SSH密钥","安全登录","密钥管理"]
 heroImage: "/static/images/photo-1526374965328-7f61d4dc18c5.jpg"
-heroAlt: "FinalShell SSH 密钥登录配置与安全实践 配图"
+heroAlt: "生产环境 SSH 密钥轮换与 FinalShell 私钥托管 配图"
 ---
 
 ## 生成与导入

@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell Linux SSH 连接配置与主机管理
-description: FinalShell 连接 Linux 服务器的基础配置、主机分组与连接参数说明。
+title: Linux 主机批量接入与会话模板规范
+description: 多台 Linux 主机接入时的会话模板、命名规范与连接参数统一做法。
 date: 2026-05-29
 category: Linux 客户端
 tags: ["Linux环境","SSH连接","主机管理"]
 heroImage: "/static/images/photo-1486406146926-c627a92ad1ab.jpg"
-heroAlt: "FinalShell Linux SSH 连接配置与主机管理 配图"
+heroAlt: "Linux 主机批量接入与会话模板规范 配图"
 ---
 
 ## 连接参数

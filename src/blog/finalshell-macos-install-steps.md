@@ -1,14 +1,14 @@
 ---
 layout: article.njk
-title: FinalShell macOS 安装步骤与终端权限设置
-description: FinalShell macOS 版安装流程、系统权限、菜单栏快捷操作与 SSH 连接准备。
+title: macOS 运维终端授权与 FinalShell 工作站配置
+description: macOS 下安装 FinalShell、辅助功能权限与终端会话工作站的标准化配置。
 date: 2026-05-30
 category: macOS 客户端
 tags: ["macOS客户端","安装教程","权限设置"]
 heroImage: "/static/images/photo-1454165804606-c3d57bc86b40.jpg"
-heroAlt: "FinalShell macOS 安装步骤与终端权限设置 配图"
-videoTitle: "FinalShell macOS 安装步骤与终端权限设置"
-videoDescription: "本教程配合图文步骤，展示 macOS 安装步骤与终端权限设置 的完整流程。"
+heroAlt: "macOS 运维终端授权与 FinalShell 工作站配置 配图"
+videoTitle: "macOS 运维终端授权与 FinalShell 工作站配置"
+videoDescription: "本教程展示 macOS 运维终端授权与 FinalShell 工作站配置 的实操流程。"
 videoPoster: "/static/images/photo-1517694712202-14dd9538aa97.jpg"
 ---
 

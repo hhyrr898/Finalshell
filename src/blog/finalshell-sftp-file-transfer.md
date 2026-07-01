@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell SFTP 文件传输与目录同步实践
-description: FinalShell SFTP 上传下载、目录浏览、权限处理与传输失败排查。
+title: 运维 SFTP 工作流：发布包传输与目录权限
+description: 上线发布场景的 SFTP 目录操作、权限 chmod 与大文件传输注意点。
 date: 2026-05-27
 category: 文件传输
 tags: ["SFTP","文件传输","目录同步"]
 heroImage: "/static/images/photo-1550751827-4bd374c3f58b.jpg"
-heroAlt: "FinalShell SFTP 文件传输与目录同步实践 配图"
+heroAlt: "运维 SFTP 工作流：发布包传输与目录权限 配图"
 ---
 
 ## SFTP 面板

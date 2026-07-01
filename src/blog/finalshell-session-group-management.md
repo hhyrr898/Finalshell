@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell 会话分组管理与多环境切换
-description: FinalShell 会话分组创建、命名规范、多环境切换与连接备份方法。
+title: 多环境会话树：测试/预发/生产分组策略
+description: 按环境与项目线组织 SSH 会话树，减少误连生产主机风险。
 date: 2026-05-28
 category: 会话管理
 tags: ["会话分组","多环境","连接管理"]
 heroImage: "/static/images/photo-1573166364524-d9dbfd8bbf83.jpg"
-heroAlt: "FinalShell 会话分组管理与多环境切换 配图"
+heroAlt: "多环境会话树：测试/预发/生产分组策略 配图"
 ---
 
 ## 分组规划

@@ -1,12 +1,12 @@
 ---
 layout: article.njk
-title: FinalShell 命令历史与快捷输入技巧
-description: FinalShell 终端命令历史搜索、别名配置与高频命令复用方法。
+title: 高频命令复用：历史检索与快捷输入
+description: 命令历史搜索、片段复用与减少重复输入的运维习惯。
 date: 2026-05-17
 category: 会话管理
 tags: ["命令历史","快捷输入","终端技巧"]
 heroImage: "/static/images/photo-1504639725590-34d0984388bd.jpg"
-heroAlt: "FinalShell 命令历史与快捷输入技巧 配图"
+heroAlt: "高频命令复用：历史检索与快捷输入 配图"
 ---
 
 ## 历史搜索

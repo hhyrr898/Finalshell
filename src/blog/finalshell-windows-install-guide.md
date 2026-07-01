@@ -1,14 +1,14 @@
 ---
 layout: article.njk
-title: FinalShell Windows 安装教程与 SSH 首次连接
-description: FinalShell Windows 版安装前检查、安装流程、SSH 首次连接与权限确认说明。
+title: 生产环境 Windows 客户端部署与 SSH 连通验收
+description: 面向运维团队的 Windows 端 FinalShell 部署检查、会话创建与首次 SSH 连通验收流程。
 date: 2026-05-31
 category: Windows 客户端
 tags: ["Windows客户端","安装教程","SSH连接"]
 heroImage: "/static/images/photo-1581092795360-fd1ca04f0952.jpg"
-heroAlt: "FinalShell Windows 安装教程与 SSH 首次连接 配图"
-videoTitle: "FinalShell Windows 安装教程与 SSH 首次连接"
-videoDescription: "本教程配合图文步骤，展示 Windows 安装教程与 SSH 首次连接 的完整流程。"
+heroAlt: "生产环境 Windows 客户端部署与 SSH 连通验收 配图"
+videoTitle: "生产环境 Windows 客户端部署与 SSH 连通验收"
+videoDescription: "本教程展示 生产环境 Windows 客户端部署与 SSH 连通验收 的实操流程。"
 videoPoster: "/static/images/photo-1573496359142-b8d87734a5a2.jpg"
 ---
 
