@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "eleventy --serve --port=8090",
-    "build": "eleventy",
+    "build": "node ./node_modules/@11ty/eleventy/cmd.cjs",
+    "dev": "node ./node_modules/@11ty/eleventy/cmd.cjs --serve --port=8090",
     "generate:articles": "node scripts/generate-articles.js",
     "fix:bing-images": "node tools/fix-bing-images.js",
     "fix:links": "node tools/add-internal-links.js",
