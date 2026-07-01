@@ -5,8 +5,9 @@ description: 本文将深入探讨FinalShell macOS客户端如何帮助用户实
 date: 2026-06-06
 category: macOS使用技巧
 tags: ["会话管理","密钥登录","macOS客户端"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%20macOS%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%AB%98%E6%95%88%E4%BC%9A%E8%AF%9D%E7%AE%A1%E7%90%86%E4%B8%8ESSH%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95%E5%AE%9E%E7%94%A8%E6%8C%87%E5%8D%97"
+heroImage: "/static/images/photo-1559136555-9303baea8ebd.jpg"
 heroAlt: "FinalShell macOS客户端高效会话管理与SSH密钥登录实用指南 配图"
+generated: true
 ---
 
 FinalShell macOS客户端为苹果用户带来原生体验与强大功能。开发者和系统管理员掌握其会话管理与SSH密钥登录技巧，能显著提升工作效率与安全性。
@@ -31,7 +32,7 @@ FinalShell macOS客户端界面与系统深度融合，安装简便，下载拖�
 
 网络波动可能导致会话中断，FinalShell自动重连确保工作不被打断。全面的会话日志记录，便于回顾操作和故障排查。
 
-![FinalShell macOS interface example](https://tse-mm.bing.com/th?q=macOS%20FinalShell%20interface)
+![FinalShell macOS interface example](/static/images/photo-1526374965328-7f61d4dc18c5.jpg)
 
 ## 安全便捷：SSH密钥登录
 
@@ -54,3 +55,10 @@ FinalShell macOS客户端界面与系统深度融合，安装简便，下载拖�
 FinalShell macOS客户端利用系统特性，支持原生快捷键、Apple设计语言界面及更好字体渲染，提供一致舒适的操作体验。
 
 总结：FinalShell macOS客户端凭借直观会话管理和强大SSH密钥登录支持，是Mac用户管理服务器的利器。掌握这些技巧，助您更高效、安全地完成日常工作。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [SSH 密钥](/blog/finalshell-ssh-key-configuration/)
+- [macOS 安装](/blog/finalshell-macos-install-steps/)
+- [会话分组](/blog/finalshell-session-group-management/)

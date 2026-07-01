@@ -8,25 +8,39 @@ permalink: /blog/
   <div class="container">
     <header class="block-head">
       <h1>FinalShell 技术文章与教程列表</h1>
-      <p>按时间整理 FinalShell 安装、连接、传输与运维相关内容。</p>
+      <p>下方「核心教程」优先收录；带时间戳的参考文默认不进入搜索引擎索引。</p>
     </header>
+    <h2 style="margin-bottom:20px;">核心教程（可索引）</h2>
     <div class="list-grid">
-      {% for post in collections.posts %}
+      {% for post in collections.indexablePosts %}
         <article class="list-card">
-          {% if post.data.heroImage %}
+          {% set hero = post.data.coverImage or post.data.heroImage %}
+          {% if hero %}
             <a href="{{ post.url }}">
-              <img src="{{ post.data.heroImage }}" alt="{{ post.data.heroAlt or post.data.title }}" loading="lazy">
+              <img src="{{ hero | assetUrl }}" alt="{{ post.data.heroAlt or post.data.title }}" loading="lazy">
             </a>
           {% endif %}
           <time datetime="{{ post.date | readableDate }}">{{ post.date | readableDate }}</time>
           <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
           <p>{{ post.data.description }}</p>
-          <div class="chip-row">
-            {% for tag in post.data.tags | publicTags %}
-              <a href="/tags/{{ tag | tagSlug }}/">{{ tag }}</a>
-            {% endfor %}
-          </div>
         </article>
+      {% endfor %}
+    </div>
+    <h2 style="margin:48px 0 20px;">全部参考文章</h2>
+    <div class="list-grid">
+      {% for post in collections.posts %}
+        {% if post.data.generated %}
+        <article class="list-card">
+          {% if post.data.heroImage %}
+            <a href="{{ post.url }}">
+              <img src="{{ post.data.heroImage | assetUrl }}" alt="{{ post.data.heroAlt or post.data.title }}" loading="lazy">
+            </a>
+          {% endif %}
+          <time datetime="{{ post.date | readableDate }}">{{ post.date | readableDate }}</time>
+          <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+          <p>{{ post.data.description }}</p>
+        </article>
+        {% endif %}
       {% endfor %}
     </div>
   </div>

@@ -7,12 +7,16 @@
     "dev": "eleventy --serve --port=8090",
     "build": "eleventy",
     "generate:articles": "node scripts/generate-articles.js",
-    "push:bing:updated": "node scripts/push-bing.js --mode updated",
-    "push:bing:all": "node scripts/push-bing.js --mode all"
+    "fix:bing-images": "node tools/fix-bing-images.js",
+    "fix:links": "node tools/add-internal-links.js",
+    "mark:generated": "node tools/mark-generated.js",
+    "push:bing:updated": "node scripts/push-bing.js --mode=updated",
+    "push:bing:all": "node scripts/push-bing.js --mode=all",
+    "bing:indexnow": "node tools/bing-instant-push.js"
   },
   "dependencies": {
-    "@11ty/eleventy": "latest",
-    "@google/genai": "latest",
-    "luxon": "latest"
+    "@11ty/eleventy": "^3.1.2",
+    "@google/genai": "^1.7.0",
+    "luxon": "^3.7.1"
   }
 }

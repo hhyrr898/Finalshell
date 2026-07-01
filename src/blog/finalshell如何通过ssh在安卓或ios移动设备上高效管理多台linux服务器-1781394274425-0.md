@@ -5,8 +5,9 @@ description: 本文详细介绍了如何利用FinalShell这款强大的终端连
 date: 2026-06-13
 category: 运维工具
 tags: ["服务器运维","移动端","SSH连接"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87SSH%E5%9C%A8%E5%AE%89%E5%8D%93%E6%88%96iOS%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E9%AB%98%E6%95%88%E7%AE%A1%E7%90%86%E5%A4%9A%E5%8F%B0Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%9F"
+heroImage: "/static/images/photo-1504639725590-34d0984388bd.jpg"
 heroAlt: "FinalShell如何通过SSH在安卓或iOS移动设备上高效管理多台Linux服务器？ 配图"
+generated: true
 ---
 
 ## 引言
@@ -37,7 +38,7 @@ FinalShell移动版继承了桌面版强大功能并：
 2.  **新建连接**：选择“SSH连接”，输入服务器IP、端口、用户名、密码。推荐使用密钥对认证以提高安全性。
 3.  **连接与管理**：连接成功后，通过内置文件管理器，可便捷传输文件（上传、下载、编辑）。
 
-![移动服务器管理](https://tse-mm.bing.com/th?q=%E7%A7%BB%E5%8A%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86)
+![移动服务器管理](/static/images/photo-1454165804606-c3d57bc86b40.jpg)
 
 ### 实时监控与命令执行
 
@@ -55,3 +56,10 @@ FinalShell提供功能完善的终端界面，您可执行各种Linux命令，�
 ## 结语
 
 FinalShell移动版为运维工程师提供了一个强大、安全且高效的移动运维解决方案。无论是紧急故障处理还是日常检查，它都能让您随时随地掌控服务器，实现真正的“指尖运维”。掌握FinalShell的移动应用，将使您的运维工作更加得心应手。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [SFTP 传输](/blog/finalshell-sftp-file-transfer/)
+- [Linux SSH 配置](/blog/finalshell-linux-ssh-setup/)
+- [服务器监控](/blog/finalshell-server-monitoring-basics/)

@@ -5,8 +5,9 @@ description: 本文详细介绍了如何使用 FinalShell 在 Linux 环境下配
 date: 2026-06-06
 category: 服务器运维
 tags: ["密钥登录","Linux环境","服务器运维"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%20%E5%9C%A8%20Linux%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E7%BB%B4%E4%B8%AD%E5%AE%9E%E7%8E%B0%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95%E7%9A%84%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B%E4%B8%8E%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5"
+heroImage: "/static/images/photo-1510511459019-5dda7724fd87.jpg"
 heroAlt: "FinalShell 在 Linux 服务器运维中实现密钥登录的详细教程与最佳实践 配图"
+generated: true
 ---
 
 ## 引言：为何选择密钥登录？
@@ -53,8 +54,15 @@ FinalShell 提供了密钥生成工具：
 *   **定期更换密钥**: 建议定期更新密钥对。
 *   **禁用密码登录**: 确认密钥登录稳定后，修改 SSH 配置（`/etc/ssh/sshd_config`），`PasswordAuthentication` 设为 `no`，重启 SSH 服务，彻底禁用密码登录，提升安全性。
 
-![SSH密钥登录示意图](https://tse-mm.bing.com/th?q=SSH%20%E5%AF%86%E9%A2%81%E7%99%BB%E5%BD%95)
+![SSH密钥登录示意图](/static/images/photo-1550751827-4bd374c3f58b.jpg)
 
 ## 总结
 
 FinalShell 配置 SSH 密钥登录，显著提升 Linux 服务器运维的安全性与便捷性。掌握密钥登录是运维工程师关键技能。希望本教程助您顺利实现密钥登录，使服务器管理更高效安全。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [SSH 密钥](/blog/finalshell-ssh-key-configuration/)
+- [Linux SSH 配置](/blog/finalshell-linux-ssh-setup/)
+- [SFTP 传输](/blog/finalshell-sftp-file-transfer/)

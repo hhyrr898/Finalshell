@@ -5,7 +5,7 @@ description: FinalShell 连接列表导出、备份恢复与团队间安全共�
 date: 2026-05-15
 category: 会话管理
 tags: ["配置备份","团队共享","连接导出"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%20%E4%BC%9A%E8%AF%9D%E9%85%8D%E7%BD%AE%E5%A4%87%E4%BB%BD%E4%B8%8E%E5%9B%A2%E9%98%9F%E5%85%B1%E4%BA%AB"
+heroImage: "/static/images/photo-1531297484001-80022131f5a1.jpg"
 heroAlt: "FinalShell 会话配置备份与团队共享 配图"
 ---
 
@@ -13,7 +13,7 @@ heroAlt: "FinalShell 会话配置备份与团队共享 配图"
 
 在批量修改连接信息或更换电脑前，导出会话配置作为备份。避免仅依赖单一设备存储。
 
-![FinalShell 配置备份](https://tse-mm.bing.com/th?q=FinalShell%20session%20backup)
+![FinalShell 配置备份](/static/images/photo-1486406146926-c627a92ad1ab.jpg)
 
 ## 共享原则
 
@@ -22,3 +22,10 @@ heroAlt: "FinalShell 会话配置备份与团队共享 配图"
 ## 恢复验证
 
 导入备份后逐条测试连接，确认分组结构与标签未丢失。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [会话分组](/blog/finalshell-session-group-management/)
+- [Linux SSH 配置](/blog/finalshell-linux-ssh-setup/)
+- [SSH 密钥](/blog/finalshell-ssh-key-configuration/)

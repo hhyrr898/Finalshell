@@ -5,8 +5,9 @@ description: 本文详细介绍了如何利用FinalShell的SFTP功能，安全�
 date: 2026-06-12
 category: Docker运维
 tags: ["SFTP传输","Docker","Linux环境"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%E5%9C%A8Linux%E7%8E%AF%E5%A2%83SFTP%E9%AB%98%E6%95%88%E4%BC%A0%E8%BE%93Docker%E5%AE%B9%E5%99%A8%E6%95%B0%E6%8D%AE%E5%8F%8A%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6%E7%9A%84%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97"
+heroImage: "/static/images/photo-1579546929518-9e396f3cc809.jpg"
 heroAlt: "FinalShell在Linux环境SFTP高效传输Docker容器数据及日志文件的实战指南 配图"
+generated: true
 ---
 
 ## FinalShell在Linux环境SFTP高效传输Docker容器数据及日志文件的实战指南
@@ -17,7 +18,7 @@ heroAlt: "FinalShell在Linux环境SFTP高效传输Docker容器数据及日志文
 
 SFTP（SSH File Transfer Protocol）协议提供了一种安全的文件传输方式，它建立在SSH之上，确保了数据传输的加密性和认证性。FinalShell作为一款功能强大的SSH客户端，内置了图形化的SFTP文件管理器，使得用户可以直接在熟悉的界面中拖拽、复制、粘贴文件，极大简化了传统命令行传输的复杂性，尤其适用于不熟悉Linux命令行的用户。
 
-![SFTP传输示意图](https://tse-mm.bing.com/th?q=SFTP%20Docker%20Linux)
+![SFTP传输示意图](/static/images/photo-1556761175-5973dc0f32e7.jpg)
 
 ### 二、 定位Docker容器数据与日志文件
 
@@ -53,3 +54,10 @@ Docker数据卷通常存储在Linux主机的`/var/lib/docker/volumes/`目录下�
 ### 总结
 
 FinalShell结合SFTP功能为Docker在Linux环境下的数据与日志管理提供了一个直观、高效且安全的解决方案。掌握其使用方法，将极大地提升您的容器运维效率。通过简单的图形界面操作，您可以轻松应对数据备份、迁移和分析等多种场景需求。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [SFTP 传输](/blog/finalshell-sftp-file-transfer/)
+- [Linux SSH 配置](/blog/finalshell-linux-ssh-setup/)
+- [Windows 安装](/blog/finalshell-windows-install-guide/)

@@ -5,8 +5,9 @@ description: 本篇文章详细介绍了如何利用FinalShell这款强大的工
 date: 2026-06-13
 category: 服务器运维
 tags: ["SFTP传输","Docker","Linux环境"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%E5%AE%9E%E6%88%98%EF%BC%9A%E5%9C%A8Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%AB%98%E6%95%88%E7%AE%A1%E7%90%86Docker%E5%AE%B9%E5%99%A8%E5%B9%B6%E5%AE%9E%E7%8E%B0SFTP%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E7%9A%84%E6%8A%80%E5%B7%A7"
+heroImage: "/static/images/photo-1639322537228-f710d846310a.jpg"
 heroAlt: "FinalShell实战：在Linux服务器上高效管理Docker容器并实现SFTP文件传输的技巧 配图"
+generated: true
 ---
 
 ## 引言：FinalShell——Linux服务器运维的得力助手
@@ -39,7 +40,7 @@ FinalShell提供直观的用户界面，让您能够轻松配置并保存多个S
 
 FinalShell内置的SFTP客户端与SSH终端无缝集成。当您连接到SSH会话时，文件浏览器会自动同步显示远程服务器的文件系统。您可以通过直观的拖拽操作，实现本地与远程服务器之间的文件上传和下载。此外，它支持断点续传，即使网络中断也能在恢复后继续传输，大大提升了大型文件传输的可靠性。
 
-![Linux 服务器管理](https://tse-mm.bing.com/th?q=Linux%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86)
+![Linux 服务器管理](/static/images/photo-1517694712202-14dd9538aa97.jpg)
 
 ### 处理文件权限与所有者
 
@@ -72,3 +73,10 @@ FinalShell还支持命令历史记录和自动补全，进一步提升了命令�
 ## 总结：一站式运维体验
 
 FinalShell通过其卓越的SSH连接、高效的SFTP文件传输以及对Docker等工具的友好支持，为Linux服务器运维人员提供了一个强大而便捷的一站式解决方案。无论是基础的文件管理，还是复杂的容器部署，FinalShell都能助您一臂之力，让服务器管理变得更加轻松高效。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [SFTP 传输](/blog/finalshell-sftp-file-transfer/)
+- [服务器监控](/blog/finalshell-server-monitoring-basics/)
+- [Linux SSH 配置](/blog/finalshell-linux-ssh-setup/)

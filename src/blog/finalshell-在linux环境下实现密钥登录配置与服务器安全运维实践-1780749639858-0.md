@@ -5,8 +5,9 @@ description: 本文详细介绍了如何在FinalShell中配置Linux服务器的�
 date: 2026-06-06
 category: Linux运维
 tags: ["密钥登录","Linux环境","服务器运维"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%20%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%9E%E7%8E%B0%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95%E9%85%8D%E7%BD%AE%E4%B8%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E8%BF%90%E7%BB%B4%E5%AE%9E%E8%B7%B5"
+heroImage: "/static/images/photo-1460925895917-afdab827c52f.jpg"
 heroAlt: "FinalShell 在Linux环境下实现密钥登录配置与服务器安全运维实践 配图"
+generated: true
 ---
 
 ## 密钥登录：Linux服务器运维的安全与效率核心
@@ -22,7 +23,7 @@ heroAlt: "FinalShell 在Linux环境下实现密钥登录配置与服务器安全
 
 公钥可公开，置于服务器；私钥严格保密，存于本地。
 
-![Linux服务器](https://tse-mm.bing.com/th?q=Linux%E6%9C%8D%E5%8A%A1%E5%99%A8)
+![Linux服务器](/static/images/photo-1531482615713-2afd69097998.jpg)
 
 ### FinalShell中配置密钥登录的步骤
 
@@ -58,3 +59,10 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ### 总结
 
 FinalShell配合SSH密钥登录，为Linux服务器运维提供了一种既安全又高效的解决方案。掌握密钥登录的配置与应用，是每位运维人员的必备技能，它能让您的服务器管理工作更智能、更安全。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [SSH 密钥](/blog/finalshell-ssh-key-configuration/)
+- [Linux SSH 配置](/blog/finalshell-linux-ssh-setup/)
+- [SFTP 传输](/blog/finalshell-sftp-file-transfer/)

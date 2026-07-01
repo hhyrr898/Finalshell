@@ -5,7 +5,7 @@ description: FinalShell 通过跳板机访问内网服务器、代理链配置�
 date: 2026-05-20
 category: SSH 连接
 tags: ["跳板机","内网访问","代理链"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%20%E8%B7%B3%E6%9D%BF%E6%9C%BA%E8%BF%9E%E6%8E%A5%E4%B8%8E%E5%A4%9A%E7%BA%A7%20SSH%20%E8%AE%BF%E9%97%AE"
+heroImage: "/static/images/photo-1550751827-4bd374c3f58b.jpg"
 heroAlt: "FinalShell 跳板机连接与多级 SSH 访问 配图"
 ---
 
@@ -13,7 +13,7 @@ heroAlt: "FinalShell 跳板机连接与多级 SSH 访问 配图"
 
 内网服务器通常无法直接访问，需先连接跳板机，再转发至目标主机。FinalShell 支持在连接属性中设置代理或 SSH 跳板。
 
-![FinalShell 跳板机](https://tse-mm.bing.com/th?q=FinalShell%20jump%20server%20SSH)
+![FinalShell 跳板机](/static/images/photo-1515879218367-8466d910aaa4.jpg)
 
 ## 配置要点
 
@@ -22,3 +22,10 @@ heroAlt: "FinalShell 跳板机连接与多级 SSH 访问 配图"
 ## 稳定性
 
 跳板机网络波动会影响整体连接。建议启用 keepalive 并配合 tmux 保持会话。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [端口转发](/blog/finalshell-port-forwarding-guide/)
+- [Linux SSH 配置](/blog/finalshell-linux-ssh-setup/)
+- [SSH 密钥](/blog/finalshell-ssh-key-configuration/)

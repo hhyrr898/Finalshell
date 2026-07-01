@@ -5,18 +5,18 @@ description: FinalShell Windows 版安装前检查、安装流程、SSH 首次�
 date: 2026-05-31
 category: Windows 客户端
 tags: ["Windows客户端","安装教程","SSH连接"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%20Windows%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E4%B8%8E%20SSH%20%E9%A6%96%E6%AC%A1%E8%BF%9E%E6%8E%A5"
+heroImage: "/static/images/photo-1581092795360-fd1ca04f0952.jpg"
 heroAlt: "FinalShell Windows 安装教程与 SSH 首次连接 配图"
 videoTitle: "FinalShell Windows 安装教程与 SSH 首次连接"
 videoDescription: "本教程配合图文步骤，展示 Windows 安装教程与 SSH 首次连接 的完整流程。"
-videoPoster: "https://tse-mm.bing.com/th?q=FinalShell%20Windows%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E4%B8%8E%20SSH%20%E9%A6%96%E6%AC%A1%E8%BF%9E%E6%8E%A5%20video%20tutorial"
+videoPoster: "/static/images/photo-1573496359142-b8d87734a5a2.jpg"
 ---
 
 ## 安装前检查
 
 在 Windows 上安装 FinalShell 前，先确认系统版本、磁盘空间与网络环境。Windows 10 与 Windows 11 均可正常使用，若系统长期未更新，安装过程中可能出现运行库或权限提示。建议关闭占用网络的大型下载任务，并准备好服务器 IP、端口、用户名与登录方式。
 
-![FinalShell Windows 安装界面](https://tse-mm.bing.com/th?q=FinalShell%20Windows%20install%20screen)
+![FinalShell Windows 安装界面](/static/images/photo-1486406146926-c627a92ad1ab.jpg)
 
 ## 安装步骤
 

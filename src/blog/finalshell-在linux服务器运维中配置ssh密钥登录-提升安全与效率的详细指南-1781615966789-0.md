@@ -5,8 +5,9 @@ description: 本文详细介绍了如何在FinalShell的辅助下，为Linux服�
 date: 2026-06-16
 category: 服务器运维技巧
 tags: ["密钥登录","Linux环境","服务器运维"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%20%E5%9C%A8Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E7%BB%B4%E4%B8%AD%E9%85%8D%E7%BD%AESSH%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95%EF%BC%8C%E6%8F%90%E5%8D%87%E5%AE%89%E5%85%A8%E4%B8%8E%E6%95%88%E7%8E%87%E7%9A%84%E8%AF%A6%E7%BB%86%E6%8C%87%E5%8D%97"
+heroImage: "/static/images/photo-1496065187959-7f07b8353c55.jpg"
 heroAlt: "FinalShell 在Linux服务器运维中配置SSH密钥登录，提升安全与效率的详细指南 配图"
+generated: true
 ---
 
 ## FinalShell 助力：理解SSH密钥登录的优势
@@ -29,7 +30,7 @@ FinalShell内置了便捷的密钥生成工具，让创建密钥对变得异常�
 2.  **生成新密钥：** 选择生成新的RSA或ED25519密钥对，并可以为私钥设置一个密码（Passphrase），这会增加一层安全保护。
 3.  **保存密钥：** 生成后，FinalShell会提示你保存私钥文件（通常是`.pem`或`.ppk`格式，FinalShell通常直接管理），并显示对应的公钥内容。
 
-![SSH密钥登录Linux服务器](https://tse-mm.bing.com/th?q=SSH%20%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95%20Linux)
+![SSH密钥登录Linux服务器](/static/images/photo-1581092795360-fd1ca04f0952.jpg)
 
 ## 配置Linux服务器接受公钥
 
@@ -62,3 +63,10 @@ FinalShell内置了便捷的密钥生成工具，让创建密钥对变得异常�
 ## 总结
 
 通过FinalShell配置SSH密钥登录，不仅大大增强了Linux服务器远程访问的安全性，也提升了日常运维的便捷性。告别繁琐的密码输入，享受高效、安全的服务器管理体验。掌握这一技能，将是您成为一名优秀Linux运维工程师的重要一步。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [SSH 密钥](/blog/finalshell-ssh-key-configuration/)
+- [Linux SSH 配置](/blog/finalshell-linux-ssh-setup/)
+- [SFTP 传输](/blog/finalshell-sftp-file-transfer/)

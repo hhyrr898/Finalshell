@@ -5,7 +5,7 @@ description: FinalShell 终端 UTF-8 编码配置、locale 设置与中文文件
 date: 2026-05-18
 category: SSH 连接
 tags: ["编码设置","中文乱码","UTF-8"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%20%E7%BB%88%E7%AB%AF%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E4%B8%8E%E7%BC%96%E7%A0%81%E8%AE%BE%E7%BD%AE%E4%BF%AE%E5%A4%8D"
+heroImage: "/static/images/photo-1520607162513-77705c0f0d4a.jpg"
 heroAlt: "FinalShell 终端中文乱码与编码设置修复 配图"
 ---
 
@@ -13,7 +13,7 @@ heroAlt: "FinalShell 终端中文乱码与编码设置修复 配图"
 
 在 FinalShell 会话属性中将编码设为 UTF-8。Windows 终端还需注意系统区域设置是否影响显示。
 
-![FinalShell 编码设置](https://tse-mm.bing.com/th?q=FinalShell%20UTF-8%20encoding)
+![FinalShell 编码设置](/static/images/photo-1515879218367-8466d910aaa4.jpg)
 
 ## 服务端 locale
 
@@ -22,3 +22,10 @@ heroAlt: "FinalShell 终端中文乱码与编码设置修复 配图"
 ## 文件名问题
 
 SFTP 浏览中文目录时若乱码，同步检查客户端与服务端编码是否一致。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [Windows 安装](/blog/finalshell-windows-install-guide/)
+- [SFTP 传输](/blog/finalshell-sftp-file-transfer/)
+- [会话分组](/blog/finalshell-session-group-management/)

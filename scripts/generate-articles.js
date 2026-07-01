@@ -220,7 +220,7 @@ function validateArticle({ title, body, style }) {
 
 function frontMatter(data) {
   const tags = JSON.stringify(data.tags);
-  return `---\nlayout: article.njk\ntitle: ${data.title}\ndescription: ${data.description}\ndate: ${data.date}\ncategory: ${data.category}\ntags: ${tags}\nheroImage: "${data.heroImage}"\nheroAlt: "${data.heroAlt}"\n---\n\n${data.body}\n`;
+  return `---\nlayout: article.njk\ntitle: ${data.title}\ndescription: ${data.description}\ndate: ${data.date}\ngenerated: true\ncategory: ${data.category}\ntags: ${tags}\nheroImage: "${data.heroImage}"\nheroAlt: "${data.heroAlt}"\n---\n\n${data.body}\n`;
 }
 
 function buildPrompt({ topic, style, firstPersonHint }) {
@@ -245,7 +245,8 @@ function buildPrompt({ topic, style, firstPersonHint }) {
     "- 禁止用词：综上所述、毋庸置疑、在当今数字化时代、业界领先、全方位、深度融合、极致。",
     "- 禁止：seo、关键词、优化、排名、收录、曝光。",
     "- 不要外链，不要促销话术，不要「总结：」式结尾。",
-    `- 插入一张图：![配图说明](https://tse-mm.bing.com/th?q=<url编码关键词>)`,
+    "- 正文内链 2～5 条，优先链到：/blog/finalshell-windows-install-guide/、/blog/finalshell-ssh-key-configuration/、/blog/finalshell-sftp-file-transfer/、/blog/finalshell-port-forwarding-guide/ 等本站教程。",
+    `- 插入一张本地风格配图占位：![配图说明](/static/images/photo-1486406146926-c627a92ad1ab.jpg)（可换不同 /static/images/ 路径，禁止 bing 热链）。`,
   "",
     `【主题方向】${topic}`,
     "",
@@ -299,7 +300,7 @@ async function createArticle(ai, index) {
           date,
           category,
           tags,
-          heroImage: `https://tse-mm.bing.com/th?q=${encodeURIComponent(title)}`,
+          heroImage: `/static/images/photo-1486406146926-c627a92ad1ab.jpg`,
           heroAlt: `${title} 配图`,
           body
         })

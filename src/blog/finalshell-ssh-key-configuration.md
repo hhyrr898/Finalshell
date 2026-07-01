@@ -5,7 +5,7 @@ description: FinalShell 配置 SSH 私钥、公钥部署、权限设置与密钥
 date: 2026-05-24
 category: SSH 连接
 tags: ["SSH密钥","安全登录","密钥管理"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%20SSH%20%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95%E9%85%8D%E7%BD%AE%E4%B8%8E%E5%AE%89%E5%85%A8%E5%AE%9E%E8%B7%B5"
+heroImage: "/static/images/photo-1526374965328-7f61d4dc18c5.jpg"
 heroAlt: "FinalShell SSH 密钥登录配置与安全实践 配图"
 ---
 
@@ -13,7 +13,7 @@ heroAlt: "FinalShell SSH 密钥登录配置与安全实践 配图"
 
 推荐使用 ed25519 或 RSA 4096 位密钥。私钥保存在本地安全目录，在 FinalShell 连接设置中选择密钥文件。
 
-![FinalShell SSH 密钥](https://tse-mm.bing.com/th?q=FinalShell%20SSH%20key%20setup)
+![FinalShell SSH 密钥](/static/images/photo-1516321318423-f06f85e504b3.jpg)
 
 ## 服务端配置
 

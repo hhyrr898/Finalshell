@@ -6,8 +6,9 @@ layout: base.njk
     <p class="kicker">{{ category or "运维资料" }}</p>
     <h1>{{ title }}</h1>
     <p class="meta-line">{{ page.date | readableDate }} · FinalShell</p>
-    {% if heroImage %}
-      <img class="hero-img" src="{{ heroImage }}" alt="{{ heroAlt or title }}" loading="lazy">
+    {% set hero = coverImage or heroImage %}
+    {% if hero %}
+      <img class="hero-img" src="{{ hero | assetUrl }}" alt="{{ heroAlt or title }}" loading="eager" decoding="async">
     {% endif %}
     {{ content | safe }}
     {% if videoTitle %}
@@ -15,30 +16,30 @@ layout: base.njk
         <h2 id="video-heading">{{ videoTitle }}</h2>
         <p>{{ videoDescription }}</p>
         <div class="video-shell video-poster" data-video-lazy="{{ videoLazy | default('') }}">
-          <img src="{{ videoPoster }}" alt="{{ videoTitle }} 安装演示画面" loading="lazy">
+          <img src="{{ (videoPoster or hero) | assetUrl }}" alt="{{ videoTitle }} 安装演示画面" loading="lazy">
           <span>视频安装教程</span>
         </div>
-        {% if videoPoster %}
         <script type="application/ld+json">
-        {
+        {{ {
           "@context": "https://schema.org",
           "@type": "VideoObject",
-          "name": "{{ videoTitle }}",
-          "description": "{{ videoDescription }}",
-          "thumbnailUrl": "{{ videoPoster }}",
-          "uploadDate": "{{ page.date | readableDate }}"
-        }
+          "name": videoTitle,
+          "description": videoDescription,
+          "thumbnailUrl": site.url + ((videoPoster or hero) | assetUrl),
+          "uploadDate": page.date | htmlDateString
+        } | dump | safe }}
         </script>
-        {% endif %}
       </section>
     {% endif %}
   </article>
   <aside class="article-aside">
+    <h2>核心教程</h2>
+    {% for item in collections.indexablePosts | limit(6) %}
+      <a href="{{ item.url }}">{{ item.data.title }}</a>
+    {% endfor %}
     <h2>相关入口</h2>
     <a href="/dows.html">客户端下载</a>
     <a href="/blog/">全部文章</a>
-    <a href="/categories/">目录</a>
-    <a href="/tags/">Tags</a>
     {% if category %}
       <a href="/categories/{{ category | categorySlug }}/">{{ category }}</a>
     {% endif %}
@@ -53,3 +54,17 @@ layout: base.njk
     {% endif %}
   </aside>
 </div>
+<script type="application/ld+json">
+{{ {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "datePublished": page.date | htmlDateString,
+  "dateModified": page.date | htmlDateString,
+  "author": { "@type": "Organization", "name": site.brand },
+  "publisher": { "@type": "Organization", "name": site.brand, "url": site.url },
+  "image": site.url + ((coverImage or heroImage or site.ogImage) | assetUrl),
+  "mainEntityOfPage": site.url + page.url
+} | dump | safe }}
+</script>

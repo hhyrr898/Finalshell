@@ -5,8 +5,9 @@ description: 本文详细介绍了如何在macOS上使用FinalShell客户端，�
 date: 2026-06-20
 category: 使用指南
 tags: ["端口转发","macOS客户端","SFTP传输"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%20macOS%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%AB%98%E6%95%88%E5%AE%9E%E7%8E%B0SFTP%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E4%B8%8E%E5%A4%9A%E7%B1%BB%E5%9E%8B%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3"
+heroImage: "/static/images/photo-1552664730-d307ca884978.jpg"
 heroAlt: "FinalShell macOS客户端高效实现SFTP文件传输与多类型端口转发配置详解 配图"
+generated: true
 ---
 
 FinalShell作为一款功能强大的SSH客户端工具，在Linux和Windows平台广受欢迎。对于macOS用户而言，FinalShell同样提供了功能完备的客户端，极大提升了服务器管理的便利性。本文将专注于FinalShell macOS客户端，详细探讨如何高效利用其SFTP文件传输功能以及灵活配置端口转发。
@@ -21,7 +22,7 @@ FinalShell作为一款功能强大的SSH客户端工具，在Linux和Windows平�
 
 SFTP界面支持图形化的文件浏览，用户可以像操作本地文件一样，在不同目录间切换、创建新文件夹、重命名文件等。最为便捷的是，FinalShell支持拖拽式文件传输。只需将本地文件或文件夹直接拖拽到SFTP窗口的远程目录，即可开始上传；反之，将远程文件拖拽到本地桌面，即可完成下载。这大大简化了传统命令行`scp`或`sftp`的复杂操作。
 
-![FinalShell SFTP 文件传输示例](https://tse-mm.bing.com/th?q=FinalShell%20SFTP%20%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93)
+![FinalShell SFTP 文件传输示例](/static/images/photo-1504639725590-34d0984388bd.jpg)
 
 ### SFTP操作技巧
 
@@ -43,3 +44,10 @@ SFTP界面支持图形化的文件浏览，用户可以像操作本地文件一�
 *   **访问内网Web服务**：部署在服务器内网的Web应用（例如，运行在`192.168.1.100:80`）可以通过本地转发到本地的`8080`端口，然后通过`http://localhost:8080`访问。
 
 FinalShell macOS客户端凭借其强大的SFTP功能和灵活的端口转发配置，为macOS用户提供了高效、安全的远程服务器管理体验。无论是日常的文件维护还是复杂的网络隧道搭建，FinalShell都能提供简洁而强大的解决方案。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [SFTP 传输](/blog/finalshell-sftp-file-transfer/)
+- [端口转发](/blog/finalshell-port-forwarding-guide/)
+- [Windows 安装](/blog/finalshell-windows-install-guide/)

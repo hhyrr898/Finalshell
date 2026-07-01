@@ -5,8 +5,9 @@ description: 本文详细介绍了如何在FinalShell macOS客户端上进行端
 date: 2026-06-22
 category: 功能指南
 tags: ["端口转发","macOS客户端","SFTP传输"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%20macOS%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E9%85%8D%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91%E4%B8%8ESFTP%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E6%8F%90%E5%8D%87%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87"
+heroImage: "/static/images/photo-1559136555-9303baea8ebd.jpg"
 heroAlt: "FinalShell macOS客户端如何高效配置端口转发与SFTP文件传输提升远程工作效率 配图"
+generated: true
 ---
 
 ## FinalShell macOS客户端：远程连接与管理利器
@@ -17,7 +18,7 @@ heroAlt: "FinalShell macOS客户端如何高效配置端口转发与SFTP文件�
 
 在macOS系统上安装FinalShell客户端非常简单，通常只需从官方渠道下载安装包并拖拽到应用程序文件夹即可。首次启动后，用户可以添加新的SSH会话，输入服务器IP地址、用户名和密码或密钥，即可建立稳定的远程连接。FinalShell的界面设计直观，集成了终端、文件管理器、进程管理等多种功能，为用户提供了全面的操作体验。
 
-![FinalShell macOS界面](https://tse-mm.bing.com/th?q=FinalShell%20macOS%E7%95%8C%E9%9D%82)
+![FinalShell macOS界面](/static/images/photo-1526374965328-7f61d4dc18c5.jpg)
 
 ### 二、利用FinalShell实现灵活的端口转发
 
@@ -55,3 +56,10 @@ FinalShell集成了高效的SFTP文件传输功能，让用户可以在本地与
 *   FinalShell支持断点续传，确保在大文件传输时的数据完整性和效率。
 
 通过上述介绍，相信您已经对FinalShell macOS客户端的端口转发和SFTP文件传输功能有了全面的了解。熟练掌握这些功能，将极大提升您管理远程服务器和处理文件的能力，从而有效提高工作效率。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [SFTP 传输](/blog/finalshell-sftp-file-transfer/)
+- [macOS 安装](/blog/finalshell-macos-install-steps/)
+- [Linux SSH 配置](/blog/finalshell-linux-ssh-setup/)

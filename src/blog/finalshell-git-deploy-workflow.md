@@ -5,7 +5,7 @@ description: 使用 FinalShell 在服务器执行 git pull、构建与发布回�
 date: 2026-05-10
 category: 开发调试
 tags: ["Git部署","发布流程","CI/CD"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%20Git%20%E6%8B%89%E5%8F%96%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B%E5%AE%9E%E8%B7%B5"
+heroImage: "/static/images/photo-1562813733-b31f71025d54.jpg"
 heroAlt: "FinalShell Git 拉取部署与发布流程实践 配图"
 ---
 
@@ -13,7 +13,7 @@ heroAlt: "FinalShell Git 拉取部署与发布流程实践 配图"
 
 SSH 到发布机，进入项目目录执行 git pull。若有 composer 或 npm 构建，在独立标签中运行并观察输出。
 
-![FinalShell Git 部署](https://tse-mm.bing.com/th?q=FinalShell%20git%20deploy%20workflow)
+![FinalShell Git 部署](/static/images/photo-1520607162513-77705c0f0d4a.jpg)
 
 ## 回滚准备
 
@@ -22,3 +22,9 @@ SSH 到发布机，进入项目目录执行 git pull。若有 composer 或 npm �
 ## 权限控制
 
 生产部署账号应仅有必要目录写权限，FinalShell 中区分个人开发账号与部署专用账号。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [Linux SSH 配置](/blog/finalshell-linux-ssh-setup/)
+- [会话分组](/blog/finalshell-session-group-management/)

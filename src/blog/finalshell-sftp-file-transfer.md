@@ -5,7 +5,7 @@ description: FinalShell SFTP 上传下载、目录浏览、权限处理与传输
 date: 2026-05-27
 category: 文件传输
 tags: ["SFTP","文件传输","目录同步"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%20SFTP%20%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E4%B8%8E%E7%9B%AE%E5%BD%95%E5%90%8C%E6%AD%A5%E5%AE%9E%E8%B7%B5"
+heroImage: "/static/images/photo-1550751827-4bd374c3f58b.jpg"
 heroAlt: "FinalShell SFTP 文件传输与目录同步实践 配图"
 ---
 
@@ -13,7 +13,7 @@ heroAlt: "FinalShell SFTP 文件传输与目录同步实践 配图"
 
 FinalShell 内置 SFTP 面板，连接 SSH 后可在同一窗口浏览远程目录。双击文件可下载，拖拽或右键可上传。
 
-![FinalShell SFTP](https://tse-mm.bing.com/th?q=FinalShell%20SFTP%20file%20transfer)
+![FinalShell SFTP](/static/images/photo-1560179707-f14e90ef3623.jpg)
 
 ## 权限注意
 

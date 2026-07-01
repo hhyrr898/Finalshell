@@ -5,7 +5,7 @@ description: FinalShell 内置监控中 CPU、内存、磁盘与网络指标的�
 date: 2026-05-25
 category: 服务器运维
 tags: ["服务器监控","资源指标","运维基础"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9B%91%E6%8E%A7%E9%9D%A2%E6%9D%BF%E5%9F%BA%E7%A1%80%E6%8C%87%E6%A0%87%E8%A7%A3%E8%AF%BB"
+heroImage: "/static/images/photo-1563986768609-322da13575f3.jpg"
 heroAlt: "FinalShell 服务器监控面板基础指标解读 配图"
 ---
 
@@ -13,7 +13,7 @@ heroAlt: "FinalShell 服务器监控面板基础指标解读 配图"
 
 连接服务器后，FinalShell 可展示 CPU、内存、磁盘与网络等基础指标。这些数据适合快速判断负载是否异常。
 
-![FinalShell 服务器监控](https://tse-mm.bing.com/th?q=FinalShell%20server%20monitoring)
+![FinalShell 服务器监控](/static/images/photo-1568605117036-5fe5e7bab0b7.jpg)
 
 ## 指标参考
 

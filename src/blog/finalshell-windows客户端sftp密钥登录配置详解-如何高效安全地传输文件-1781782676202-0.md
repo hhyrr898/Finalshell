@@ -5,8 +5,9 @@ description: 本文详细介绍了如何在FinalShell Windows客户端中配置S
 date: 2026-06-18
 category: SFTP文件传输
 tags: ["Windows客户端","SFTP传输","密钥登录"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%20Windows%E5%AE%A2%E6%88%B7%E7%AB%AFSFTP%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3%EF%BC%9A%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E5%AE%89%E5%85%A8%E5%9C%B0%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6"
+heroImage: "/static/images/photo-1573497019940-1c28c88b4f3e.jpg"
 heroAlt: "FinalShell Windows客户端SFTP密钥登录配置详解：如何高效安全地传输文件 配图"
+generated: true
 ---
 
 ## 引言：为何选择SFTP密钥登录？
@@ -35,7 +36,7 @@ echo "您的公钥内容" >> ~/.ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
 ```
 
-![SFTP密钥登录图标](https://tse-mm.bing.com/th?q=ssh%20key)
+![SFTP密钥登录图标](/static/images/photo-1517694712202-14dd9538aa97.jpg)
 
 ## 步骤三：FinalShell配置SFTP密钥登录
 
@@ -66,3 +67,10 @@ chmod 600 ~/.ssh/authorized_keys
 ## 总结
 
 通过本文的详细指导，您应该已经成功配置了FinalShell Windows客户端的SFTP密钥登录功能。这种方式不仅为您的文件传输提供了高级别的安全保障，更通过免密码登录带来了极大的操作便利。现在，您可以放心地利用FinalShell管理您的远程服务器文件，享受高效安全的工作体验。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [SSH 密钥](/blog/finalshell-ssh-key-configuration/)
+- [SFTP 传输](/blog/finalshell-sftp-file-transfer/)
+- [Linux SSH 配置](/blog/finalshell-linux-ssh-setup/)

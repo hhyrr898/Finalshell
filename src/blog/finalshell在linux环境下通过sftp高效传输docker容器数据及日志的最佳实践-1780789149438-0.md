@@ -5,8 +5,9 @@ description: 本文详细介绍了如何利用FinalShell强大的SFTP功能，�
 date: 2026-06-06
 category: Linux运维, Docker管理, 文件传输
 tags: ["SFTP传输","Docker","Linux环境"]
-heroImage: "https://tse-mm.bing.com/th?q=FinalShell%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E4%B8%8B%E9%80%9A%E8%BF%87SFTP%E9%AB%98%E6%95%88%E4%BC%A0%E8%BE%93Docker%E5%AE%B9%E5%99%A8%E6%95%B0%E6%8D%AE%E5%8F%8A%E6%97%A5%E5%BF%97%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5"
+heroImage: "/static/images/photo-1600132806370-bf17e65e942f.jpg"
 heroAlt: "FinalShell在Linux环境下通过SFTP高效传输Docker容器数据及日志的最佳实践 配图"
+generated: true
 ---
 
 FinalShell作为一款功能强大的SSH客户端，不仅提供了便捷的终端操作，其内置的SFTP文件传输功能更是Linux运维人员在处理Docker容器数据时的得力助手。在复杂的Linux环境中，高效且安全地管理Docker容器数据，特别是涉及数据卷和日志文件的传输，是确保应用稳定运行的关键。
@@ -26,7 +27,7 @@ FinalShell集成了直观的SFTP界面，允许用户像操作本地文件管理
 *   **容器配置文件:** 容器的配置信息，如Docker Compose文件，通常位于您项目的工作目录中。
 *   **容器日志:** Docker容器的日志默认会输出到`stdout`和`stderr`，并通过Docker守护进程收集。您可以通过`docker logs <container_id>`查看，或在某些配置下，日志会写入到`/var/lib/docker/containers/<container_id>/<container_id>-json.log`等路径。
 
-![Docker Linux SFTP 文件传输示意](https://tse-mm.bing.com/th?q=Docker%20Linux%20SFTP)
+![Docker Linux SFTP 文件传输示意](/static/images/photo-1531297484001-80022131f5a1.jpg)
 
 使用FinalShell的SFTP视图，您可以轻松导航到这些目录，并通过图形界面选择需要传输的文件或文件夹。
 
@@ -43,3 +44,10 @@ FinalShell集成了直观的SFTP界面，允许用户像操作本地文件管理
 *   **传输中断:** 确认网络连接稳定，避免在传输大型文件时进行其他高带宽活动。
 
 FinalShell的SFTP功能极大地简化了Linux环境下Docker容器数据的管理和传输过程，是提高运维效率不可或缺的工具。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [SFTP 传输](/blog/finalshell-sftp-file-transfer/)
+- [Linux SSH 配置](/blog/finalshell-linux-ssh-setup/)
+- [Windows 安装](/blog/finalshell-windows-install-guide/)
