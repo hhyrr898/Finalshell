@@ -4,7 +4,7 @@ import https from "https";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DOMAIN = process.env.BING_DOMAIN || "finalshell-cn.com";
+const DOMAIN = process.env.BING_DOMAIN || "finalshell-ssh.com";
 const BING_KEY = (process.env.INDEXNOW_KEY || "").trim();
 const OUTPUT_DIR = path.join(__dirname, "..", "_site");
 

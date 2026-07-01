@@ -10,6 +10,7 @@
     "fix:bing-images": "node tools/fix-bing-images.js",
     "fix:links": "node tools/add-internal-links.js",
     "mark:generated": "node tools/mark-generated.js",
+    "postprocess": "npm run mark:generated && npm run fix:bing-images && npm run fix:links",
     "push:bing:updated": "node scripts/push-bing.js --mode=updated",
     "push:bing:all": "node scripts/push-bing.js --mode=all",
     "bing:indexnow": "node tools/bing-instant-push.js"

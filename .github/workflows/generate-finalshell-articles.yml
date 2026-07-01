@@ -36,8 +36,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GENERATE_COUNT: ${{ github.event.inputs.count || '1' }}
         run: npm run generate:articles -- --count=${GENERATE_COUNT}
-      - name: Add internal links
-        run: node tools/add-internal-links.js
+      - name: Post-process articles
+        run: npm run postprocess
       - name: Commit generated articles
         id: commit
         run: |
@@ -74,12 +74,12 @@ jobs:
         continue-on-error: true
         env:
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
-          BING_DOMAIN: finalshell-cn.com
+          BING_DOMAIN: finalshell-ssh.com
         run: node tools/bing-instant-push.js
       - name: Submit to Bing Webmaster API
         if: steps.commit.outputs.changed == 'true'
         continue-on-error: true
         env:
-          SITE_URL: https://finalshell-cn.com
+          SITE_URL: https://finalshell-ssh.com
           BING_API_KEY: ${{ secrets.BING_API_KEY }}
         run: npm run push:bing:updated
