@@ -1,10 +1,12 @@
 import { GoogleGenAI } from "@google/genai";
 import fs from "node:fs/promises";
 import path from "node:path";
+import { countChineseChars, getCharLimits, shortenBodyIfNeeded } from "./article-validation.js";
 
 const root = process.cwd();
 const blogDir = path.join(root, "src", "blog");
 const outputFile = path.join(root, ".generated-urls.json");
+const MAX_ATTEMPTS = 5;
 
 const bannedPatterns = [
   /seo/gi,
@@ -60,7 +62,7 @@ const articleStyles = [
   {
     id: "tutorial",
     name: "教程型",
-    length: "800-1500字",
+    length: "750-2200字",
     structure: [
       "开头用一两句话交代场景，别写空话套话。",
       "正文用 h2/h3 分节，至少写 3 个带序号的具体操作步骤（如「第一步」「第二步」或 1. 2. 3.）。",
@@ -71,7 +73,7 @@ const articleStyles = [
   {
     id: "review",
     name: "评测型",
-    length: "800-1500字",
+    length: "750-2200字",
     structure: [
       "开头说明你在什么环境下测的（系统版本、FinalShell 版本）。",
       "选 3 个维度打分（如易用性、稳定性、文件传输），每个维度用 h3，写分数（如 8/10）和两三句理由，语气像博客评测不像产品稿。",
@@ -82,7 +84,7 @@ const articleStyles = [
   {
     id: "faq",
     name: "问答型",
-    length: "800-1500字",
+    length: "750-2200字",
     structure: [
       "开头 2-3 句说明这篇文章解决什么问题。",
       "正文写 5 个 FAQ，每个用 h3 做问句标题，答案要具体、能照着做。",
@@ -150,10 +152,6 @@ function pickStyle(seed) {
   return articleStyles[seed % articleStyles.length];
 }
 
-function countChineseChars(text) {
-  return (text.match(/[\u4e00-\u9fa5]/g) || []).length;
-}
-
 function hasVersionOrDate(text) {
   return (
     /\d+\.\d+(\.\d+)?/.test(text) ||
@@ -184,13 +182,6 @@ function isTitleAcceptable(title) {
   if (bannedTitlePatterns.some((pattern) => pattern.test(title))) return false;
   if (title.length > 42) return false;
   return true;
-}
-
-function getCharLimits(style) {
-  if (style.id === "brief") {
-    return { min: 350, max: 900 };
-  }
-  return { min: 750, max: 1550 };
 }
 
 function validateArticle({ title, body, style }) {
@@ -272,11 +263,14 @@ async function createArticle(ai, index) {
   const topic = tags.join("、");
   const firstPersonHint = firstPersonHints[seed % firstPersonHints.length];
   const prompt = buildPrompt({ topic, style, firstPersonHint });
+  const { max: maxChars } = getCharLimits(style);
 
   let parsed = null;
   let lastIssues = [];
+  let title = "";
+  let body = "";
 
-  for (let attempt = 0; attempt < 5; attempt += 1) {
+  for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt += 1) {
     const retryNote =
       attempt > 0
         ? `\n\n上次生成不合格，请修正：${lastIssues.join("；")}。重新生成完整 JSON。`
@@ -288,35 +282,49 @@ async function createArticle(ai, index) {
     const raw = result.text.replace(/^```json\s*|```$/g, "").trim();
     parsed = JSON.parse(raw);
 
-    const title = cleanText(parsed.title).startsWith("FinalShell")
+    title = cleanText(parsed.title).startsWith("FinalShell")
       ? cleanText(parsed.title)
       : `FinalShell ${cleanText(parsed.title)}`;
-    const body = cleanText(parsed.body);
+    body = cleanText(parsed.body);
     lastIssues = validateArticle({ title, body, style });
 
-    if (lastIssues.length === 0) {
-      const description = cleanText(parsed.description).slice(0, 120);
-      const category = cleanText(parsed.category || tags[0]);
-      const slug = `${slugify(title)}-${Date.now()}-${index}`;
+    if (lastIssues.length === 0) break;
 
-      return {
-        slug,
-        url: `/blog/${slug}/`,
-        content: frontMatter({
-          title,
-          description,
-          date,
-          category,
-          tags,
-          heroImage: `/static/images/photo-1486406146926-c627a92ad1ab.jpg`,
-          heroAlt: `${title} 配图`,
-          body
-        })
-      };
+    const onlyTooLong =
+      lastIssues.length === 1 && lastIssues[0].includes("正文字数") && countChineseChars(body) > maxChars;
+    if (onlyTooLong && attempt >= MAX_ATTEMPTS - 2) {
+      try {
+        body = cleanText(await shortenBodyIfNeeded(ai, body, maxChars));
+        lastIssues = validateArticle({ title, body, style });
+        if (lastIssues.length === 0) break;
+      } catch (error) {
+        console.warn("正文压缩失败，继续重试:", error.message);
+      }
     }
   }
 
-  throw new Error(`Article validation failed after 5 attempts: ${lastIssues.join("；")}`);
+  if (lastIssues.length > 0) {
+    throw new Error(`Article validation failed after ${MAX_ATTEMPTS} attempts: ${lastIssues.join("；")}`);
+  }
+
+  const description = cleanText(parsed.description).slice(0, 120);
+  const category = cleanText(parsed.category || tags[0]);
+  const slug = `${slugify(title)}-${Date.now()}-${index}`;
+
+  return {
+    slug,
+    url: `/blog/${slug}/`,
+    content: frontMatter({
+      title,
+      description,
+      date,
+      category,
+      tags,
+      heroImage: `/static/images/photo-1486406146926-c627a92ad1ab.jpg`,
+      heroAlt: `${title} 配图`,
+      body
+    })
+  };
 }
 
 async function main() {
