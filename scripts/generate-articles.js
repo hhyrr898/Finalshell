@@ -93,7 +93,7 @@ const articleStyles = [
   {
     id: "brief",
     name: "快讯型",
-    length: "300-600字",
+    length: "350-900字",
     structure: [
       "短平快，像博客快讯，不要铺垫太长。",
       "必须写清楚一个具体版本号或日期（如 FinalShell 4.5.12 或 2026-06-20）。",
@@ -186,11 +186,17 @@ function isTitleAcceptable(title) {
   return true;
 }
 
+function getCharLimits(style) {
+  if (style.id === "brief") {
+    return { min: 350, max: 900 };
+  }
+  return { min: 750, max: 1550 };
+}
+
 function validateArticle({ title, body, style }) {
   const issues = [];
   const charCount = countChineseChars(body);
-  const minChars = style.id === "brief" ? 280 : 750;
-  const maxChars = style.id === "brief" ? 650 : 1550;
+  const { min: minChars, max: maxChars } = getCharLimits(style);
 
   if (!isTitleAcceptable(title)) {
     issues.push("标题太官腔或过长，应像博客标题");
@@ -224,6 +230,7 @@ function frontMatter(data) {
 }
 
 function buildPrompt({ topic, style, firstPersonHint }) {
+  const { min: minChars, max: maxChars } = getCharLimits(style);
   return [
     "你是技术博客的兼职作者，给普通用户写实操帖，不是写白皮书，也不是产品宣传稿。",
     "写一篇关于 FinalShell 的原创中文 markdown 文章。",
@@ -234,12 +241,13 @@ function buildPrompt({ topic, style, firstPersonHint }) {
     "- 像博客标题，口语化一点，例如「FinalShell 连不上服务器？我试了这三种办法」「FinalShell 4.5 在 Win11 上装完第一件事」。",
     "- 禁止：白皮书、完整指南、全面指南、深度解析、技术详解、实用指南 这类官腔标题。",
     "",
-    `【结构】本次用${style.name}（${style.length}）`,
+    `【结构】本次用${style.name}（${style.length}，正文中文字数必须 ${minChars}-${maxChars} 字）`,
     ...style.structure.map((line) => `- ${line}`),
     "",
     "【硬性要求】",
     "- 正文只用 h2/h3，不要 h1。",
     "- 必须包含：①一个具体版本号或日期 ②至少 3 步操作步骤 ③「## 常见问题」小节。",
+    `- 正文中文字数（仅计汉字）必须落在 ${minChars}-${maxChars}，超出会被退回重写。`,
     `- 至少写一段第一人称，可参考：「${firstPersonHint}…」`,
     "- 段落长短错落，不要每段都 3-4 句一样长。",
     "- 禁止用词：综上所述、毋庸置疑、在当今数字化时代、业界领先、全方位、深度融合、极致。",
@@ -268,7 +276,7 @@ async function createArticle(ai, index) {
   let parsed = null;
   let lastIssues = [];
 
-  for (let attempt = 0; attempt < 3; attempt += 1) {
+  for (let attempt = 0; attempt < 5; attempt += 1) {
     const retryNote =
       attempt > 0
         ? `\n\n上次生成不合格，请修正：${lastIssues.join("；")}。重新生成完整 JSON。`
@@ -308,7 +316,7 @@ async function createArticle(ai, index) {
     }
   }
 
-  throw new Error(`Article validation failed after 3 attempts: ${lastIssues.join("；")}`);
+  throw new Error(`Article validation failed after 5 attempts: ${lastIssues.join("；")}`);
 }
 
 async function main() {
