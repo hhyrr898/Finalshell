@@ -22,12 +22,23 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
       - run: npm ci || npm install
       - name: Build Eleventy site
         env:
           SITE_URL: ${{ vars.SITE_URL != '' && vars.SITE_URL || 'https://finalshell-ssh.com' }}
         run: npm run build
-      - uses: actions/configure-pages@v5
+      # Pages must be enabled once in repo Settings → Pages → Source: GitHub Actions.
+      # If you have a PAT with repo/pages scope, set secret REPO_ADMIN_TOKEN to auto-enable.
+      - name: Configure GitHub Pages (auto-enable)
+        if: ${{ secrets.REPO_ADMIN_TOKEN != '' }}
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+          token: ${{ secrets.REPO_ADMIN_TOKEN }}
+      - name: Configure GitHub Pages
+        if: ${{ secrets.REPO_ADMIN_TOKEN == '' }}
+        uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
