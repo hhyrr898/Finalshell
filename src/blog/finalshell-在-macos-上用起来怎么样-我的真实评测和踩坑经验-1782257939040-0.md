@@ -7,6 +7,7 @@ category: 服务器运维
 tags: ["macOS客户端","服务器运维","Docker"]
 heroImage: "/static/images/photo-1517694712202-14dd9538aa97.jpg"
 heroAlt: "FinalShell 在 macOS 上用起来怎么样？我的真实评测和踩坑经验 配图"
+generated: true
 ---
 
 作为一名长期在 macOS 上摸爬滚打的运维党，我总在寻找一个趁手的 SSH 工具。最近一段时间，我把主力客户端换成了 FinalShell。这次评测，我用的是 **FinalShell 4.9.9** 版本，操作系统是 **macOS Sonoma 14.5 (23F79)**。在日常的服务器维护、Docker 环境管理中，它究竟表现如何呢？下面就来聊聊我的真实感受。
@@ -84,3 +85,10 @@ FinalShell 的文件传输功能绝对是加分项。内置的 SFTP 浏览器和
 *   **配置 SFTP 用户：** 有些服务器的 SFTP 配置会限制默认权限，可以联系服务器管理员调整或使用一个拥有更高权限的用户进行传输。
 
 希望这些经验能帮助你更好地驾驭 FinalShell，让它成为你日常运维的好帮手！
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [SFTP 发布工作流](/blog/finalshell-sftp-file-transfer/)
+- [Windows 生产部署](/blog/finalshell-windows-install-guide/)
+- [macOS 工作站配置](/blog/finalshell-macos-install-steps/)

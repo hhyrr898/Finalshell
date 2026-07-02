@@ -7,6 +7,7 @@ category: SSH工具使用
 tags: ["端口转发","macOS客户端","SFTP传输"]
 heroImage: "/static/images/photo-1510511459019-5dda7724fd87.jpg"
 heroAlt: "FinalShell macOS 版怎么高效传文件？保姆级 SFTP 教程来了！ 配图"
+generated: true
 ---
 
 我最近换了 MacBook Pro，兴冲冲地装上了 FinalShell 4.5.0 macOS 版，想着管理服务器能更方便了。之前在 Windows 上用它得心应手，特别是那个集成的 SFTP 功能，传文件简直不要太方便。可到了 macOS 上，发现一些操作习惯变了，尤其是一些新手朋友可能在文件传输上会遇到坎儿。别担心，今天咱们就来个实操帖，一步步教你如何在 FinalShell macOS 客户端上高效搞定 SFTP 文件传输。
@@ -64,3 +65,10 @@ FinalShell 在 Linux 服务器管理方面确实是一款非常好用的工具�
 ### 4. macOS 上 FinalShell 的界面字体模糊或显示不正常？
 
 这是 macOS 平台上 Java 应用有时会遇到的兼容性问题。你可以尝试调整 FinalShell 的 Java 运行时环境（JRE）配置，或者更新 FinalShell 到最新版本，开发者通常会这些显示问题。有时候，重启 FinalShell 客户端也能解决临时的显示异常。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [SFTP 发布工作流](/blog/finalshell-sftp-file-transfer/)
+- [Linux 批量接入](/blog/finalshell-linux-ssh-setup/)
+- [Windows 生产部署](/blog/finalshell-windows-install-guide/)
