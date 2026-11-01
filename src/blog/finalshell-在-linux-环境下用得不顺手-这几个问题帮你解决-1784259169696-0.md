@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 Linux 环境下用得不顺手？这几个问题帮你解决！
 description: FinalShell 不只是一个 SSH 工具，在 Linux 环境下它能做更多。本文将解答你在 FinalShell 使用中遇到的中文乱码、文件传输慢、端口转发配置、移动端管理等常见问题，并提供详细操作步骤，助你高效开发与调试。

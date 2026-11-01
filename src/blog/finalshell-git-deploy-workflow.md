@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: Git 拉码发布：FinalShell 终端部署流水线
 description: 测试与生产环境 git pull、依赖安装与服务 reload 的标准步骤。

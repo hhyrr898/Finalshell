@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell macOS 版上手：文件传输和端口转发原来这么简单！
 description: Mac 用户看过来！还在为 FinalShell 在 macOS 上如何高效传输文件而困扰？本文将详细指导你如何在 FinalShell macOS 客户端 4.5.3 版本中，轻松配置和使用 SFTP 功能，实现服务器与本地文件的双向传输

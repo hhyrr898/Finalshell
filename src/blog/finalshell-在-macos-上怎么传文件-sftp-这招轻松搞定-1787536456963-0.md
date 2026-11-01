@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 macOS 上怎么传文件？SFTP 这招轻松搞定！
 description: 还在为 macOS 上传服务器文件犯愁？本文手把手教你如何使用 FinalShell macOS 客户端进行 SFTP 文件传输。从安装到操作，三步让你告别命令行，享受可视化文件管理的便捷高效。新手也能快速上手，轻松搞定服务器文件。

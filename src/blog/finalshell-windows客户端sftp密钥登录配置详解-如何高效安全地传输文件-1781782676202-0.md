@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell Windows客户端SFTP密钥登录配置详解：如何高效安全地传输文件
 description: 本文详细介绍了如何在FinalShell Windows客户端中配置SFTP密钥登录，实现安全、高效的远程文件传输，包括密钥生成、服务器部署公钥以及FinalShell客户端的具体设置步骤。

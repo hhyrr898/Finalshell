@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: 线上负载异常判读：FinalShell 实时监控面板
 description: 结合 CPU、内存与网络曲线判断服务器负载突增与常见误报。

@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell macOS客户端高效进行端口转发与SFTP文件传输的实用技巧
 description: 本文旨在为FinalShell macOS客户端用户提供关于如何高效利用其端口转发功能以及进行安全便捷SFTP文件传输的详细指南，帮助您轻松管理远程服务器。

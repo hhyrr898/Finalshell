@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 连不上 Linux 服务器？这些排查技巧帮你搞定！
 description: 遇到 FinalShell 连接服务器失败、卡顿或文件传输慢的问题？别急，这篇文章手把手教你如何排查网络、防火墙和SSH配置，还会分享一些移动端和密钥管理的小技巧，让你的 FinalShell 用起来更顺畅！

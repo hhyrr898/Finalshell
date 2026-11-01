@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell macOS 客户端：用密钥登录告别密码，新手也能轻松上手！
 description: FinalShell macOS 客户端支持密钥登录，让连接服务器更安全便捷。这篇文章会教你如何在 FinalShell 4.6.9 版本中生成 SSH 密钥、上传公钥到服务器，并配置会话使用密钥登录，彻底告别每次手动输入密码的繁琐。

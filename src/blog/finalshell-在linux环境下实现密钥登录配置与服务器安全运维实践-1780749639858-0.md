@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在Linux环境下实现密钥登录配置与服务器安全运维实践
 description: 本文详细介绍了如何在FinalShell中配置Linux服务器的密钥登录，从生成SSH密钥对到配置连接，并探讨了密钥登录在提高服务器运维安全与效率方面的实践应用。

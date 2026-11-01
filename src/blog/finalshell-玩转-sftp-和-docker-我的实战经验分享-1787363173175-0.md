@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 玩转 SFTP 和 Docker，我的实战经验分享
 description: 想用 FinalShell 管理服务器、传输文件和玩转 Docker 容器？这篇文章分享了我在 Windows 11 和 FinalShell 4.6.1 上的实操体验，并给出常见问题解决方案，帮你少走弯路。

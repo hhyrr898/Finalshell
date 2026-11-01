@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 玩转 Linux 开发调试，这几个常见问题你遇到过吗？
 description: 在使用 FinalShell 进行 Linux 服务器开发调试和移动端操作时，你是否遇到过连接中断、文件传输慢或端口转发不清楚等问题？本文精选 FinalShell 移动端连接、SSH 稳定、SFTP 传输、端口转发、进程监控五大常见疑问，

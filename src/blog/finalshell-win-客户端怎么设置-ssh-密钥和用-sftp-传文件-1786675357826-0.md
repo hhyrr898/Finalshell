@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell：Win 客户端怎么设置 SSH 密钥和用 SFTP 传文件？
 description: 本文手把手教你如何在 Windows 上使用 FinalShell 客户端，快速配置 SSH 密钥登录，告别繁琐的密码输入。同时，详细讲解如何利用 FinalShell 的 SFTP 功能，高效安全地进行服务器文件传输，解决日常运维中的常见

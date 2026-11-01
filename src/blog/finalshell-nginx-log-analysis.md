@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: Nginx 5xx 与慢请求：日志 awk/grep 快速定位
 description: access/error 日志字段解读与 awk 统计慢 URL、5xx 比例。

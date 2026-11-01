@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell macOS 客户端上手：告别密码，用密钥秒连服务器！
 description: 如果你是 macOS 用户，还在为管理服务器会话和繁琐密码头疼，这篇 FinalShell 教程正是为你准备的。我们将手把手教你如何安装 FinalShell macOS 客户端，并通过 SSH 密钥实现安全便捷的无密码登录，彻底解放你的双

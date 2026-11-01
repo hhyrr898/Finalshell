@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 macOS 上好不好用？我的真实体验与打分
 description: FinalShell 在 macOS 上的表现如何？本文将分享我在 Mac Ventura 系统下使用 FinalShell 4.5.0 连接服务器、管理 Docker 容器的真实体验，并从易用性、稳定性、文件传输等方面给出客观打分，助你快

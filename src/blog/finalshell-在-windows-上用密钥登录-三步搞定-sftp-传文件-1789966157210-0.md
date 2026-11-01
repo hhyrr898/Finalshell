@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 Windows 上用密钥登录，三步搞定 SFTP 传文件！
 description: FinalShell 无法连接服务器？本文教你如何在 Windows 上使用 FinalShell 2024.03 版本，通过 SSH 密钥安全登录，并轻松进行 SFTP 文件传输，告别密码烦恼，高效管理你的服务器文件。

@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 用密钥登录更安全，Win11 上 SFTP 传输文件这样搞定！
 description: FinalShell 是个好用的 SSH 工具，但你还在用密码登录？本文教你如何在 Win11 上配置 FinalShell 4.6.0，用 SSH 密钥安全连接服务器，并轻松搞定 SFTP 文件传输，告别密码烦恼，提升操作效率。

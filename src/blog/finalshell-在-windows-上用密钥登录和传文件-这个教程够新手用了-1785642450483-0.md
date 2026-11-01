@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 Windows 上用密钥登录和传文件，这个教程够新手用了！
 description: FinalShell 在 Windows 上用密钥登录是不是总搞不定？文件传输又懵圈了？别急，这篇实操帖手把手教你如何配置SSH密钥，安全又高效地管理服务器文件，让你轻松告别密码登录的烦恼，快速上手SFTP，享受便捷的远程操作。

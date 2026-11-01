@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 Linux 上用着不顺手？这几个小技巧帮你搞定！
 description: FinalShell 在 Linux 环境下使用时常遇到一些小麻烦？本文为你解答常见的疑问，提供具体操作步骤，让你在远程开发和调试时更顺畅，大幅提升工作效率，不再为连接、文件传输和环境配置烦恼。

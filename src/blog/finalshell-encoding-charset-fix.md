@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: 跨系统编码对齐：CentOS/Ubuntu 中文终端
 description: 不同发行版 locale 与 FinalShell 终端编码的协同设置方法。

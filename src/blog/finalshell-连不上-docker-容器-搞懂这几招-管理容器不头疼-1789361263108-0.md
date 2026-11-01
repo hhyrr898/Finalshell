@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 连不上 Docker 容器？搞懂这几招，管理容器不头疼！
 description: FinalShell 用户是不是在纠结怎么高效管理 Docker 容器？本文为你整理了连接容器、查看日志、传输文件和处理端口映射的实用技巧，让你用 FinalShell 管理容器更顺手，开发调试更高效，告别繁琐命令行。

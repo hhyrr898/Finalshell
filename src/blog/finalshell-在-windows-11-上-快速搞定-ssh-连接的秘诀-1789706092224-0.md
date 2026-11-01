@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 Windows 11 上，快速搞定 SSH 连接的秘诀
 description: 刚在 Windows 11 装了 FinalShell 4.5.12？这篇文章手把手教你如何快速配置 SSH 连接服务器。从下载安装到首次连接，避开常见坑，让你立刻上手使用这款强大的终端工具。告别复杂设置，高效管理你的远程服务器。

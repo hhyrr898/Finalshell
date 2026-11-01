@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: 堡垒机链路：二级跳转与内网主机访问
 description: 跳板机与 ProxyJump 思路在 FinalShell 中的多级 SSH 会话链配置。

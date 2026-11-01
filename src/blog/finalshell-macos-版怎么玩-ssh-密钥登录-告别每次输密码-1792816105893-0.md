@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell macOS 版怎么玩？SSH 密钥登录，告别每次输密码！
 description: 本文是 FinalShell macOS 客户端的实操指南，手把手教你配置 SSH 密钥实现无密码登录，高效管理多台服务器会话。告别繁琐的密码输入，提升你的远程连接效率，轻松应对日常维护。

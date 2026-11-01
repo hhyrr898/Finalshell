@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: 多环境会话树：测试/预发/生产分组策略
 description: 按环境与项目线组织 SSH 会话树，减少误连生产主机风险。

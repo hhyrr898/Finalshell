@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 玩转 Linux 服务器：密钥登录实测与体验分享
 description: 还在用密码登录 Linux 服务器？FinalShell 4.6.1 的密钥登录功能，实测如何在 Win11 环境下高效管理你的云服务器。从易用性、稳定性到文件传输，分享我的真实使用体验，并附上常见问题解答，帮你快速上手，告别繁琐密码。

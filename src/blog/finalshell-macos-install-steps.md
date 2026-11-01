@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: macOS 运维终端授权与 FinalShell 工作站配置
 description: macOS 下安装 FinalShell、辅助功能权限与终端会话工作站的标准化配置。

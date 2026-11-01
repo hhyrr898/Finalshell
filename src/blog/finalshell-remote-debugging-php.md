@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: PHP 线上排错：远程 tail 与 FPM 状态查看
 description: 远程 tail PHP/Nginx 错误日志、查看 php-fpm 进程状态的常用命令。

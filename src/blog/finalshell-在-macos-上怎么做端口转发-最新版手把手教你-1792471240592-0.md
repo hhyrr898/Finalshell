@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 macOS 上怎么做端口转发？最新版手把手教你
 description: FinalShell 用户看过来！如果你在 macOS 上想通过 FinalShell 设置端口转发，让本地应用访问远程服务，这篇文章手把手教你。从新建连接到配置本地/远程转发，常见问题一并解决，让你轻松搞定内外网互通。

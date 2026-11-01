@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell Mac版客户端用SFTP传文件慢？我教你几招提速！
 description: 这篇文章手把手教你如何使用 FinalShell macOS 客户端进行高效稳定的 SFTP 文件传输。遇到传输慢、卡顿等问题？这里有实用的设置和常见问题解决方案，让你的文件管理更顺畅，告别等待。

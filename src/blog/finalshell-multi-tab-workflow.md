@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: 多标签并行运维：日志、部署与数据库同屏操作
 description: 同一窗口多标签并行 tail、git pull 与数据库客户端操作的工作流。

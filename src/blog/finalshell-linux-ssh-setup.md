@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: Linux 主机批量接入与会话模板规范
 description: 多台 Linux 主机接入时的会话模板、命名规范与连接参数统一做法。

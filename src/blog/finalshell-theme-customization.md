@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: 值班可读性：终端主题与配色长时间优化
 description: 深色或浅色主题与高对比配色，降低长时间值班的眼部疲劳。

@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 macOS 上用着咋样？Docker 运维体验报告
 description: 好奇 FinalShell macOS 版好不好用？本文以 FinalShell 4.8.6 在 macOS Sonoma 14.4.1 上的实测体验，从易用性、稳定性、Docker 运维等方面深度评测，并分享了常见的操作问题与解决办法，帮

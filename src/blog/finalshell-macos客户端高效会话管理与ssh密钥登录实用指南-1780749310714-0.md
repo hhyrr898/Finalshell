@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell macOS客户端高效会话管理与SSH密钥登录实用指南
 description: 本文将深入探讨FinalShell macOS客户端如何帮助用户实现高效的服务器会话管理，并详细介绍通过SSH密钥进行安全便捷登录的各项功能与技巧。

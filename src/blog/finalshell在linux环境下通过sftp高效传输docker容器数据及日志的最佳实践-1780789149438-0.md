@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell在Linux环境下通过SFTP高效传输Docker容器数据及日志的最佳实践
 description: 本文详细介绍了如何利用FinalShell强大的SFTP功能，在Linux服务器上高效、安全地传输Docker容器的数据卷、配置文件和日志文件，提升您的容器管理效率。

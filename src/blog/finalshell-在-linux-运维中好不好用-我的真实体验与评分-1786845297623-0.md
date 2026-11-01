@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 Linux 运维中好不好用？我的真实体验与评分
 description: 本文以 FinalShell 4.6.8 版本在 macOS Ventura 13.5 环境下的使用体验为例，详细评测其在易用性、稳定性、文件传输等方面的表现。如果你正考虑用 FinalShell 管理 Linux 服务器，这里有我的真实感

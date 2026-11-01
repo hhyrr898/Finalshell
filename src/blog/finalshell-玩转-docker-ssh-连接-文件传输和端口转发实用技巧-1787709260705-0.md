@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 玩转 Docker：SSH 连接、文件传输和端口转发实用技巧
 description: 这篇文章将教你如何使用 FinalShell 高效管理 Docker 容器。涵盖了从 SSH 连接容器内部服务，到轻松传输文件，再到理解和配置端口转发的实用操作技巧，帮你解决开发调试中的常见难题。

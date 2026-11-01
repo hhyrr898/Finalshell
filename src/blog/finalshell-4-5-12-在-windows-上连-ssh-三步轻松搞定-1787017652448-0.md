@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 4.5.12 在 Windows 上连 SSH？三步轻松搞定！
 description: FinalShell 4.5.12 在 Windows 10/11 首次连接 SSH 总是出问题？别担心，这篇文章分享三步快速设置方法，帮你排除常见连接故障，顺利管理你的服务器。

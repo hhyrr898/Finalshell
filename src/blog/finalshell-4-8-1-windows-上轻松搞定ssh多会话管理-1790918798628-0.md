@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 4.8.1：Windows 上轻松搞定SSH多会话管理
 description: 还在为管理一堆服务器会话头疼？FinalShell 4.8.1 在 Windows 上的会话管理功能，能让你告别手忙脚乱。本文教你如何快速添加、组织和连接你的服务器，效率瞬间提升，再也不怕记不住密码和IP了。

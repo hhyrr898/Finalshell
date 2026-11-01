@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: 团队会话资产导出与交接前连接清单
 description: 导出会话配置、整理密钥清单，用于团队交接与灾备恢复。

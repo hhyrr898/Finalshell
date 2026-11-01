@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在我的 CentOS 7 上跑了小半年，真实体验怎么样？
 description: 还在找好用的 SSH 工具吗？本文分享我在 CentOS 7 和 WSL2 环境下，使用 FinalShell 4.6.9 几个月的真实体验。从 SFTP 文件传输到 Docker 容器管理，全面评测它的易用性、稳定性，并给出详细打分和常见

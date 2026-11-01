@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: 远程 MySQL：慢查询导出与变更操作规范
 description: 慢查询日志、mysqldump 与线上 DDL 变更的终端操作规范。

@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 Linux 环境下调试移动设备，我帮你搞定几个常见问题！
 description: 还在为 FinalShell 在 Linux 环境下调试安卓设备犯愁吗？本文聚焦日常使用痛点，教你如何轻松配置 SSH 密钥、高效传输文件，以及通过端口转发调试移动应用，让你的开发工作更顺畅。

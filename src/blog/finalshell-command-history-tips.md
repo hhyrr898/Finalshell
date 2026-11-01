@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: 高频命令复用：历史检索与快捷输入
 description: 命令历史搜索、片段复用与减少重复输入的运维习惯。

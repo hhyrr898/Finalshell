@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: 生产环境 SSH 密钥轮换与 FinalShell 私钥托管
 description: 密钥生成、服务器 authorized_keys 部署及 FinalShell 私钥引用与轮换建议。

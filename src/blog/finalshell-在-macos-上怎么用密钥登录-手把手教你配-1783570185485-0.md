@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 macOS 上怎么用密钥登录？手把手教你配！
 description: 作为 macOS 用户，想用 FinalShell 密钥登录服务器却遇到难题？别担心！这篇教程为你详细讲解如何在 macOS 上安装 FinalShell 4.6.1，生成 SSH 密钥，并配置会话实现安全登录，还附带常见问题解答，帮你轻松

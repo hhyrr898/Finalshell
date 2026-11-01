@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: 生产环境 Windows 客户端部署与 SSH 连通验收
 description: 面向运维团队的 Windows 端 FinalShell 部署检查、会话创建与首次 SSH 连通验收流程。

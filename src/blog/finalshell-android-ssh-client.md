@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: 移动端应急运维：外网 SSH 与现场重启
 description: 手机端紧急登录、重启服务与临时查看日志的应急场景。

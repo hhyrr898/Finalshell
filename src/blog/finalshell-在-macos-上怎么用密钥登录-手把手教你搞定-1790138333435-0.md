@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 macOS 上怎么用密钥登录，手把手教你搞定！
 description: FinalShell macOS 客户端如何配置 SSH 密钥登录？本文从生成密钥对、上传公钥到服务器，到最终在 FinalShell 中配置会话的全过程，帮你解决登录难题，提升安全性，让连接服务器更便捷高效。

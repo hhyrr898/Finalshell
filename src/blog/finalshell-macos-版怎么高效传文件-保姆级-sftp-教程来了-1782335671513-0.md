@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell macOS 版怎么高效传文件？保姆级 SFTP 教程来了！
 description: 在 macOS 上使用 FinalShell 传输文件遇到障碍？本文手把手教你如何高效利用 FinalShell macOS 客户端的 SFTP 功能，快速上传下载文件，并解决一些常见连接和小问题，让你告别命令行困扰。

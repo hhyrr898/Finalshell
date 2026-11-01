@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 玩转 Docker 容器？这些连接和管理小技巧你得知道！
 description: FinalShell 不仅是高效的 SSH 客户端，更是管理 Docker 容器的得力助手。本文将通过问答形式，手把手教你如何用 FinalShell 轻松连接 Docker 容器、解决常见的连接故障、查看日志和资源、快速上传下载文件，以及

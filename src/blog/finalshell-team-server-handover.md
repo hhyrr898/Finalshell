@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: 运维交接 SOP：会话、密钥与文档同步
 description: 离职或轮岗时 FinalShell 会话、密钥与 runbook 的交接步骤。

@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell如何通过SSH在安卓或iOS移动设备上高效管理多台Linux服务器？
 description: 本文详细介绍了如何利用FinalShell这款强大的终端连接工具，在安卓和iOS等移动设备上通过SSH协议，安全、便捷、高效地管理和维护多台Linux服务器，特别适合需要随时随地进行服务器运维的工程师。

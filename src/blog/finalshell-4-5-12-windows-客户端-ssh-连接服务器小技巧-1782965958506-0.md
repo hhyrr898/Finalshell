@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 4.5.12：Windows 客户端 SSH 连接服务器小技巧
 description: 还在为FinalShell在Windows上连接SSH服务器犯愁？本文分享FinalShell 4.5.12版本下，如何轻松配置SSH连接，并提供几个实用小技巧，帮你快速搞定服务器登录，提升操作效率。

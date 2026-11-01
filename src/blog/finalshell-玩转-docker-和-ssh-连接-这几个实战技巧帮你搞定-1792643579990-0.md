@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 玩转 Docker 和 SSH 连接？这几个实战技巧帮你搞定！
 description: FinalShell 用着顺手，但遇到 Docker SSH 连接不上、SSH 密钥登录失败、端口转发配置难等问题怎么办？本文分享 FinalShell 在 SSH 连接、Docker 环境调试等方面的实用技巧，帮你轻松搞定常见故障，提升工

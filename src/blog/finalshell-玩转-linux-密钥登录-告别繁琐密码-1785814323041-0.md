@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 玩转 Linux 密钥登录，告别繁琐密码！
 description: 还在用密码登录 Linux 服务器？FinalShell 帮你实现密钥认证，省去每次输入密码的烦恼，同时大幅提升安全性。本文分享在 Windows 11 和 FinalShell 5.2.2 环境下的密钥登录实操体验，并给出我的使用评测，助

@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 连 Docker 容器，这些小技巧让你事半功倍！
 description: 还在为 FinalShell 连接 Docker 容器犯愁？这篇文章手把手教你如何在 FinalShell 中高效管理和调试 Docker 容器。从 SSH 连接、端口转发到文件传输，一文解决你在 FinalShell 4.6.1 版本下可

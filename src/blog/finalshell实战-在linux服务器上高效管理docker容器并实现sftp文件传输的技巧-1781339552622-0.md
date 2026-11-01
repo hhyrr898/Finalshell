@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell实战：在Linux服务器上高效管理Docker容器并实现SFTP文件传输的技巧
 description: 本篇文章详细介绍了如何利用FinalShell这款强大的工具，轻松连接并管理您的Linux服务器。我们将重点探讨FinalShell在SFTP文件传输方面的便捷性，以及如何通过它有效操作和维护Docker容器，助您提升Linux环境下的运维

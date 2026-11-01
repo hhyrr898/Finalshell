@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: 新购 VPS 上线：SSH 加固与首批会话建立
 description: 新机 sshd 加固、防火墙放行与 FinalShell 首批生产会话创建清单。

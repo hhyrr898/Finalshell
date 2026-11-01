@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 如何高效利用其 Windows 客户端进行 SSH 安全连接与复杂端口转发配置详解
 description: 本文详细介绍了 FinalShell Windows 客户端在建立 SSH 连接、配置本地和远程端口转发以及动态代理方面的具体操作和实用技巧，帮助用户轻松管理远程服务器。

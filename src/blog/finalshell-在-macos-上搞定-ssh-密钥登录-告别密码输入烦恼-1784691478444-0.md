@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 macOS 上搞定 SSH 密钥登录，告别密码输入烦恼！
 description: FinalShell macOS 用户看过来！这篇指南手把手教你如何在 macOS 系统上配置 SSH 密钥登录服务器，彻底告别繁琐的密码输入。从生成密钥到 FinalShell 会话配置，全程指引，让你的远程管理更高效、更安全。轻松搞定 

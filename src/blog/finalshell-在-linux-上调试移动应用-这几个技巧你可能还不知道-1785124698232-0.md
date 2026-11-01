@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 Linux 上调试移动应用？这几个技巧你可能还不知道！
 description: FinalShell 是很多开发者爱用的工具，但想在 Linux 服务器上高效调试移动应用可不容易。这篇文章分享几个我在 FinalShell 配合 Linux 环境进行移动开发调试时，遇到的常见问题和实用解决办法，帮你少走弯路。

@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 Linux 上怎么玩转？这几个小技巧你得知道！
 description: FinalShell 是款很实用的 SSH 工具。如果你在 Linux 环境里用它开发调试，遇到 SSH 连不上、文件传不了或者会话管理不方便的问题，这篇文章手把手教你解决，帮你提高效率，开发更顺畅。

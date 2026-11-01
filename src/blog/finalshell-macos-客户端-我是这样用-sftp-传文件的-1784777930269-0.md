@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell macOS 客户端：我是这样用 SFTP 传文件的
 description: FinalShell macOS 用户看过来！这篇文章手把手教你如何高效使用 SFTP 功能，在 Mac 上轻松上传下载服务器文件。无论是日常维护还是项目部署，你都能快速掌握文件传输技巧，告别繁琐命令行，让你的工作流更顺畅。

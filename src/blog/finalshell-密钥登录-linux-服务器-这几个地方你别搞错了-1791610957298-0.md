@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 密钥登录 Linux 服务器，这几个地方你别搞错了！
 description: FinalShell 是一款常用的 SSH 客户端，本文以其最新版为例，分享如何在 Windows 下通过 SSH 密钥安全高效地连接 Linux 服务器。文中涵盖密钥生成、服务器配置及客户端设置的详细步骤，帮你避开常见配置陷阱，轻松实现密

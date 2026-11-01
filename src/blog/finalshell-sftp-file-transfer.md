@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: 运维 SFTP 工作流：发布包传输与目录权限
 description: 上线发布场景的 SFTP 目录操作、权限 chmod 与大文件传输注意点。

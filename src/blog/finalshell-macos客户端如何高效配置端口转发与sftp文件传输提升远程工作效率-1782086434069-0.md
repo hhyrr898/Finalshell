@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell macOS客户端如何高效配置端口转发与SFTP文件传输提升远程工作效率
 description: 本文详细介绍了如何在FinalShell macOS客户端上进行端口转发的配置，以及如何高效利用SFTP功能进行文件传输，帮助用户更好地管理远程服务器和提升工作效率。

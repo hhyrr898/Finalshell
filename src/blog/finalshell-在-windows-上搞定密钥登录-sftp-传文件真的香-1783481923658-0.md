@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 Windows 上搞定密钥登录，SFTP 传文件真的香！
 description: FinalShell 在 Windows 上用密钥登录服务器，省去每次输密码的麻烦，还能通过 SFTP 安全高效地管理文件。本文手把手教你配置 SSH 密钥，从生成到上传，再到 FinalShell 中的设置，让你彻底告别密码烦恼，轻松玩转

@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 macOS 上好用吗？我用它管理服务器的真实感受
 description: 如果你也在用 macOS 管理服务器，FinalShell 可能是个不错的选择。这篇文章分享了我在 macOS Ventura 13.5、FinalShell 4.5.18 版本下的真实使用体验，从易用性、稳定性、文件传输三个维度进行了详细

@@ -225,7 +225,11 @@ function buildPrompt({ topic, style, firstPersonHint }) {
   return [
     "你是技术博客的兼职作者，给普通用户写实操帖，不是写白皮书，也不是产品宣传稿。",
     "写一篇关于 FinalShell 的原创中文 markdown 文章。",
-    "只返回严格 JSON，字段：title, description, category, body。",
+    "只返回严格 JSON，字段：title, description, slug, category, body。",
+    "",
+    "【slug】",
+    "- 把主题翻译成纯小写英文短语，单词用连字符分隔，例如 finalshell-ssh-connection-tutorial。",
+    "- 只用 a-z、0-9 和连字符，不超过 8 个单词，不要出现中文。",
     "",
     "【标题】",
     "- 必须以 FinalShell 开头。",
@@ -244,7 +248,7 @@ function buildPrompt({ topic, style, firstPersonHint }) {
     "- 禁止用词：综上所述、毋庸置疑、在当今数字化时代、业界领先、全方位、深度融合、极致。",
     "- 禁止：seo、关键词、优化、排名、收录、曝光。",
     "- 不要外链，不要促销话术，不要「总结：」式结尾。",
-    "- 正文内链 2～5 条，优先链到：/blog/finalshell-windows-install-guide/、/blog/finalshell-ssh-key-configuration/、/blog/finalshell-sftp-file-transfer/、/blog/finalshell-port-forwarding-guide/ 等本站教程。",
+    "- 正文内链 2～5 条，只允许链到这些真实存在的页面：/blog/finalshell-android-ssh-client/、/blog/finalshell-backup-session-config/、/blog/finalshell-command-history-tips/、/blog/finalshell-docker-container-access/、/blog/finalshell-encoding-charset-fix/。按主题相关选 2～3 条，锚文本自然。",
     `- 插入一张本地风格配图占位：![配图说明](/static/images/photo-1486406146926-c627a92ad1ab.jpg)（可换不同 /static/images/ 路径，禁止 bing 热链）。`,
   "",
     `【主题方向】${topic}`,
@@ -254,13 +258,66 @@ function buildPrompt({ topic, style, firstPersonHint }) {
   ].join("\n");
 }
 
-async function createArticle(ai, index) {
+// ===== 多模型支持：DeepSeek 正文 + OpenRouter 开头（简体站）=====
+const DEEPSEEK_KEY = process.env.DEEPSEEK_API_KEY || "";
+const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || "deepseek-chat";
+const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY || "";
+const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || "z-ai/glm-4.6";
+
+async function chatDeepSeek(prompt) {
+  const resp = await fetch("https://api.deepseek.com/chat/completions", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${DEEPSEEK_KEY}` },
+    body: JSON.stringify({ model: DEEPSEEK_MODEL, messages: [{ role: "user", content: prompt }], response_format: { type: "json_object" } })
+  });
+  if (!resp.ok) throw new Error(`DeepSeek API ${resp.status}: ${(await resp.text()).slice(0, 200)}`);
+  const data = await resp.json();
+  const text = data?.choices?.[0]?.message?.content;
+  if (!text) throw new Error("DeepSeek 返回内容为空");
+  return text;
+}
+
+function buildOpeningPrompt(title, body) {
+  const paras = String(body || "").split(/\n\s*\n/);
+  const opening = paras.slice(0, 2).join("\n\n");
+  return [
+    "你是资深技术编辑。为文章《" + title + "》重写开头两段（合计 150-220 字），要求：",
+    "1. 第一句必须含具体对象＋具体数字/日期/版本（只能使用原文已有的信息，严禁编造新数据）。",
+    "2. 第二句直接说明「这篇文章解决什么问题、看完能做到什么」。",
+    "3. 禁止：综上所述、在当今数字化时代、随着AI的发展、任何感叹号、空话套话。",
+    "4. 使用简体中文（zh-CN），语气像博客作者。",
+    "只输出重写后的两段正文，不要标题、不要任何解释。",
+    "",
+    "原文开头：",
+    opening
+  ].join("\n");
+}
+
+function spliceOpening(body, newOpening) {
+  const paras = String(body || "").split(/\n\s*\n/);
+  const rest = paras.slice(2).join("\n\n");
+  return newOpening + (rest ? "\n\n" + rest : "");
+}
+
+async function rewriteOpeningOpenRouter(title, body) {
+  const resp = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${OPENROUTER_KEY}` },
+    body: JSON.stringify({ model: OPENROUTER_MODEL, max_tokens: 3000, messages: [{ role: "user", content: buildOpeningPrompt(title, body) }] })
+  });
+  if (!resp.ok) throw new Error(`OpenRouter API ${resp.status}: ${(await resp.text()).slice(0, 200)}`);
+  const data = await resp.json();
+  const text = data?.choices?.[0]?.message?.content;
+  if (!text || text.length < 60) throw new Error("开头重写结果过短");
+  return spliceOpening(body, text.trim());
+}
+
+async function createArticle(ai, index, topic) {
   const today = new Date();
   const date = today.toISOString().slice(0, 10);
   const seed = Math.floor(Date.now() / 1000) + index;
   const tags = pickTags(seed);
   const style = pickStyle(seed);
-  const topic = tags.join("、");
   const firstPersonHint = firstPersonHints[seed % firstPersonHints.length];
   const prompt = buildPrompt({ topic, style, firstPersonHint });
   const { max: maxChars } = getCharLimits(style);
@@ -275,11 +332,17 @@ async function createArticle(ai, index) {
       attempt > 0
         ? `\n\n上次生成不合格，请修正：${lastIssues.join("；")}。重新生成完整 JSON。`
         : "";
-    const result = await ai.models.generateContent({
-      model: "gemini-2.5-flash",
-      contents: prompt + retryNote
-    });
-    const raw = result.text.replace(/^```json\s*|```$/g, "").trim();
+    let rawText;
+    if (DEEPSEEK_KEY) {
+      rawText = await chatDeepSeek(prompt + retryNote);
+    } else {
+      const result = await ai.models.generateContent({
+        model: "gemini-2.5-flash",
+        contents: prompt + retryNote
+      });
+      rawText = result.text;
+    }
+    const raw = String(rawText).replace(/^```json\s*|```$/g, "").trim();
     parsed = JSON.parse(raw);
 
     title = cleanText(parsed.title).startsWith("FinalShell")
@@ -307,9 +370,28 @@ async function createArticle(ai, index) {
     throw new Error(`Article validation failed after ${MAX_ATTEMPTS} attempts: ${lastIssues.join("；")}`);
   }
 
+  // 开头 200 字由 OpenRouter 模型重写（质量分层），重写后须重新过校验
+  if (OPENROUTER_KEY) {
+    try {
+      console.log("使用 OpenRouter 重写开头 200 字...");
+      const newBody = await rewriteOpeningOpenRouter(title, body);
+      const recheck = validateArticle({ title, body: newBody, style });
+      if (recheck.length === 0) {
+        body = newBody;
+        console.log("开头重写完成并通过校验");
+      } else {
+        console.warn("开头重写后校验未通过，保留原文:", recheck.join("；"));
+      }
+    } catch (error) {
+      console.warn("开头重写失败，保留原文:", error.message);
+    }
+  }
+
   const description = cleanText(parsed.description).slice(0, 120);
   const category = cleanText(parsed.category || tags[0]);
-  const slug = `${slugify(title)}-${Date.now()}-${index}`;
+  const slugEn = slugify(parsed.slug || "").replace(/-{2,}/g, "-");
+  const hasAscii = /[a-z]/.test(slugEn) && !/[\u4e00-\u9fa5]/.test(slugEn);
+  const slug = hasAscii ? slugEn : `finalshell-${Date.now()}-${index}`;
 
   return {
     slug,
@@ -329,17 +411,36 @@ async function createArticle(ai, index) {
 
 async function main() {
   const apiKey = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY;
-  if (!apiKey) throw new Error("Set GEMINI_API_KEY or GOOGLE_API_KEY before generating articles.");
+  if (!apiKey && !DEEPSEEK_KEY) throw new Error("Set DEEPSEEK_API_KEY or GEMINI_API_KEY before generating articles.");
 
-  const ai = new GoogleGenAI({ apiKey });
+  const ai = apiKey ? new GoogleGenAI({ apiKey }) : null;
   const count = getCount();
   await fs.mkdir(blogDir, { recursive: true });
 
+  // 选题改走词库（此前用随机 tag 拼接，导致「手机端 FinalShell」这类幻觉选题）
+  let keywords = [];
+  try {
+    keywords = JSON.parse(await fs.readFile(path.join(root, "src", "keywords.json"), "utf-8"));
+  } catch (error) {
+    console.warn("读取 keywords.json 失败，回退随机 tag 选题:", error.message);
+  }
+  if (!Array.isArray(keywords) || keywords.length === 0) {
+    console.warn("⚠️ 词库为空，本次仍用随机 tag 选题，请尽快补充 keywords.json");
+    keywords = [];
+  }
+
   const urls = [];
   for (let i = 0; i < count; i += 1) {
-    const article = await createArticle(ai, i);
+    const topic = keywords.length > 0 ? String(keywords.shift()) : pickTags(Math.floor(Date.now() / 1000) + i).join("、");
+    console.log(`本篇选题: ${topic}`);
+    const article = await createArticle(ai, i, topic);
     await fs.writeFile(path.join(blogDir, `${article.slug}.md`), article.content, "utf8");
     urls.push(article.url);
+  }
+
+  if (keywords.length > 0) {
+    await fs.writeFile(path.join(root, "src", "keywords.json"), JSON.stringify(keywords, null, 2), "utf8");
+    console.log(`词库剩余: ${keywords.length}`);
   }
 
   await fs.writeFile(outputFile, JSON.stringify({ urls }, null, 2), "utf8");

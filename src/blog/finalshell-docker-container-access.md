@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: Docker 宿主机运维：容器日志与 exec 排查
 description: 连接 Docker 宿主机、查看容器日志与 docker exec 进入容器排错。

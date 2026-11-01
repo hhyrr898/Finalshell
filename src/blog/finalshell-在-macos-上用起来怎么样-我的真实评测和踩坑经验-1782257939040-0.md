@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 macOS 上用起来怎么样？我的真实评测和踩坑经验
 description: 本文将为你真实评测 FinalShell macOS 客户端的使用体验。我将分享在 macOS Sonoma 14.5 下使用 FinalShell 4.9.9 进行服务器运维、Docker 管理的感受，包括易用性、稳定性、文件传输等维度的

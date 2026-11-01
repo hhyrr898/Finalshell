@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 在 Linux 服务器运维中实现密钥登录的详细教程与最佳实践
 description: 本文详细介绍了如何使用 FinalShell 在 Linux 环境下配置和实现基于SSH密钥的登录，提升服务器运维的安全性与便捷性，并提供最佳实践建议。

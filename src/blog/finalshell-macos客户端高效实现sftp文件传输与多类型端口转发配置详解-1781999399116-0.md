@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell macOS客户端高效实现SFTP文件传输与多类型端口转发配置详解
 description: 本文详细介绍了如何在macOS上使用FinalShell客户端，通过SFTP功能进行高效文件传输，并深入讲解了本地、远程及动态端口转发的配置方法和实际应用场景，助力macOS用户轻松管理远程服务器。

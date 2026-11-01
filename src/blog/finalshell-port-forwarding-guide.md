@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: 本地调试远程服务：隧道与端口映射实战
 description: 本地转发映射内网数据库或 API，配合 FinalShell 隧道做开发联调。

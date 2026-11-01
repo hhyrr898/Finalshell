@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell macOS 版：我用它管理服务器和 Docker 的真实体验
 description: 还在犹豫 FinalShell macOS 版怎么样？我分享了自己几个月的使用体验，包括易用性、稳定性、文件传输的打分和常见问题解决，帮你轻松管理服务器和 Docker。

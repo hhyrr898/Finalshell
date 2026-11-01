@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 搞定密钥登录和SFTP传文件，Win用户看这篇就够了
 description: FinalShell 在 Windows 客户端上，如何一步步配置SSH密钥登录，告别每次输入密码的烦恼？这篇文章手把手教你操作。还会顺便演示怎么用SFTP功能上传下载文件，让你的服务器管理更高效便捷。

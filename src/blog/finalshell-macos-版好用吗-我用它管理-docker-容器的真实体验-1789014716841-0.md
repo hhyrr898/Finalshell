@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell macOS 版好用吗？我用它管理 Docker 容器的真实体验
 description: FinalShell 在 macOS 上表现如何？本文实测 FinalShell 4.6.0 在 macOS Sonoma 环境下，从安装到管理服务器及 Docker 容器的全过程。分享易用性、稳定性、文件传输等维度真实体验，并附带常见问题

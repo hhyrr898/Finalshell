@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell 配置 SSH 密钥登录 Linux，我常用的这几个步骤
 description: FinalShell 是一款常用的 SSH 工具，但很多人对密钥登录的配置不熟悉。本文以 FinalShell 4.6.4 为例，手把手教你如何设置 SSH 密钥，让你告别密码，更安全高效地管理 Linux 服务器，并分享一些我用 Fina

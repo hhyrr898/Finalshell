@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: article.njk
 title: FinalShell：Windows 上用密钥登录和 SFTP 传文件，超简单！
 description: 本文手把手教你在 Windows 系统上使用 FinalShell，通过 SSH 密钥安全登录服务器，并高效利用 SFTP 功能传输文件。如果你还在为密码登录服务器感到不便，或者不知道如何用 FinalShell 快速上传下载文件，这篇教程
