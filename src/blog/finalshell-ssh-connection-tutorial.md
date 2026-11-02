@@ -65,3 +65,10 @@ FinalShell 没有官方云端同步功能，会话是存在本地的。换机器
 ## 写在最后的一点经验
 
 第一次连服务器紧张很正常，我当初还把端口填成了 21。把 IP、端口、用户名、认证方式四件事对齐，登录这一步基本不会卡住。后面熟悉了，再去折腾命令历史、多标签和监控面板，效率会一点点提上来。碰到问题先看报错原文，比反复重装软件有用得多。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [SFTP 发布工作流](/blog/finalshell-sftp-file-transfer/)
+- [Windows 生产部署](/blog/finalshell-windows-install-guide/)
+- [macOS 工作站配置](/blog/finalshell-macos-install-steps/)

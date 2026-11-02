@@ -89,3 +89,10 @@ FinalShell 连上主机后，窗口下半部分或者右侧会有一个文件管
 多半是传输中断后被当成了完成，也可能是磁盘满了只写进去一部分。重新传一次并核对字节数，同时 `df -h` 看下空间。
 
 把上面几步走一遍，日常的上传下载基本不会再卡。真正要留意的是权限和编码这两个前置条件，提前处理好，后面点两下就完事。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [Windows 生产部署](/blog/finalshell-windows-install-guide/)
+- [Linux 批量接入](/blog/finalshell-linux-ssh-setup/)
+- [macOS 工作站配置](/blog/finalshell-macos-install-steps/)

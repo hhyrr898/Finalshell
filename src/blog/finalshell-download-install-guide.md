@@ -66,3 +66,10 @@ Linux 版在文件传输上做得不错，拖拽上传的体验可以看[SFTP �
 正常情况下不会，配置保存在用户目录下。但跨大版本升级前，我还是建议手动导出一份会话列表，几分钟的事，能省掉重配的麻烦。
 
 整个流程走下来，三个平台的核心操作其实差不多，难点主要在下载选对包和首次启动的系统拦截。装好之后先连一台测试机跑通，再批量导入生产环境的会话，会比较稳妥。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [SFTP 发布工作流](/blog/finalshell-sftp-file-transfer/)
+- [Windows 生产部署](/blog/finalshell-windows-install-guide/)
+- [macOS 工作站配置](/blog/finalshell-macos-install-steps/)

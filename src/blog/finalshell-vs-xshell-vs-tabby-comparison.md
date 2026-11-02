@@ -60,3 +60,10 @@ FinalShell 没有官方云端同步。我的做法是手动导出配置文件夹
 可以，两者不冲突。我机器上就并存，Tabby 用来跑本地终端，FinalShell 管远程服务器。唯一要注意的是默认 SSH 关联程序别互相抢。
 
 选工具这件事，没有标准答案。先想清楚你每天打开它要干什么，再对着上面四步试一遍，哪个顺手就用哪个。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [SFTP 发布工作流](/blog/finalshell-sftp-file-transfer/)
+- [Windows 生产部署](/blog/finalshell-windows-install-guide/)
+- [macOS 工作站配置](/blog/finalshell-macos-install-steps/)

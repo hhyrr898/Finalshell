@@ -39,3 +39,10 @@ A：换手机热点试试，或者过半小时再开。别去第三方站下，�
 
 **Q：Mac 装完提示“无法验证开发者”？**
 A：系统设置里点“仍要打开”，4.5.12 的签名是正常的，只是 Gatekeeper 拦了一下。装好后如果 SSH 连不上，可以先看[编码问题排查](/blog/finalshell-encoding-charset-fix/)，中文乱码多半是那里的事。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [Windows 生产部署](/blog/finalshell-windows-install-guide/)
+- [macOS 工作站配置](/blog/finalshell-macos-install-steps/)
+- [Linux 批量接入](/blog/finalshell-linux-ssh-setup/)

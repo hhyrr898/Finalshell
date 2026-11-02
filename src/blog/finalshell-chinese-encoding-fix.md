@@ -68,3 +68,10 @@ FinalShell 4.5.12 的默认设置能覆盖多数场景，但编码链任一环�
 容器内可能未设置 locale。进入容器执行 `locale -a` 查看可用语言包，必要时安装 `locales` 并生成 UTF-8 配置。容器访问的更多操作见 [Docker 容器访问指南](blog/finalshell-docker-container-access/)。
 
 排查顺序建议从客户端编码开始，依次检查字体、系统区域、服务器 locale。多数情况下第一步就能解决。动手前建议先记录当前配置，方便回滚。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [SFTP 发布工作流](/blog/finalshell-sftp-file-transfer/)
+- [Windows 生产部署](/blog/finalshell-windows-install-guide/)
+- [Linux 批量接入](/blog/finalshell-linux-ssh-setup/)

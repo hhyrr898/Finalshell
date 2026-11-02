@@ -72,3 +72,10 @@ A：先检查端口是不是被防火墙拦了。另外 FinalShell 默认用密�
 
 **Q：这个版本有中文界面吗？**
 A：有，默认就是中文。如果显示乱码，去设置里把字体编码改成 UTF-8，具体操作看前面提到的编码文章。
+## 延伸阅读
+
+若需进一步查阅，可先看本站以下教程：
+
+- [SFTP 发布工作流](/blog/finalshell-sftp-file-transfer/)
+- [Windows 生产部署](/blog/finalshell-windows-install-guide/)
+- [macOS 工作站配置](/blog/finalshell-macos-install-steps/)
